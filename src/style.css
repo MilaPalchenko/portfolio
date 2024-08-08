@@ -1,0 +1,88 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+#wrapper {
+  background: linear-gradient(180deg, #160038, #273552);
+}
+
+h2 {
+  background: thistle;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #160038, transparent);
+  z-index: 1000;
+}
+
+#title {
+  position: absolute;
+  color: white;
+  white-space: nowrap;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  z-index: 12;
+  text-shadow: 2px 2px #838383;
+  width: 100%;
+  height: 100vh;
+  top: 200px;
+  left: 40%;
+}
+
+.wrap-section {
+  position: relative;
+  height: 850px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+#mount-closer {
+  z-index: 13;
+}
+
+#mount-further {
+  z-index: 12;
+}
+
+#water-front {
+  z-index: 14;
+}
+
+#rocks-front {
+  z-index: 14;
+}
+
+.check {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #160038, #7597de);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+:root { 
+    --off-white: #cfcfcf;
+    --off-black: #292929;
+    --dark-grey: #363636;
+    --main-dark-grey: #4F6367;
+    --main-mid-grey: #7A9E9F;
+    --main-light-grey: #B8D8D8;
+    --accent-red: #FE5F55;
+    --secondary-beige: #EEF5DB;
+    --black: #000;
+    --white: #fff;
+    --off-black: #303030;
+    --off-white: #d6d6d6;
+    --main-font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+*, :before, :after { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }/*# sourceMappingURL=style.css.map */
+
+
+
+header { 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+

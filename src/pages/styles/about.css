@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  background: rgba(255, 159, 49, 0.1098039216); /* Optional: just make scrollbar invisible */
+  width: 10; /* Remove scrollbar space */
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.about-container {
+  margin: 50px 20px;
+  font-family: var(--main-font);
+  width: 80vw;
+}
+.about-container .style-test {
+  background-color: #fff1e0;
+  border-radius: 5px;
+  height: 800px;
+  left: 100px;
+  position: absolute;
+  top: 150px;
+  width: 1200px;
+  z-index: -1;
+}
+.about-container .style-test-two {
+  background-color: rgba(170, 120, 92, 0.2823529412);
+  border-radius: 5px;
+  height: 800px;
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  width: 1200px;
+  z-index: -2;
+}
+.about-container__profile-img {
+  border-radius: 10px;
+  float: right;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 500px;
+}
+.about-container__name-title {
+  font-size: 3rem;
+  text-align: center;
+}
+.about-container__about-text {
+  margin: 20px;
+}
+.about-container__text {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  text-align: justify;
+}
+.about-container__projects-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about-container__projects {
+  align-items: center;
+  background: rgba(170, 120, 92, 0.2823529412);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  height: 140px;
+  margin: 5px 5px 5px 30px;
+  padding-top: 10px;
+  width: 200px;
+}
+.about-container__projects--title {
+  color: var(--off-black);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-red);
+  font-size: 2rem;
+  margin: 5px;
+}
+.about-container__projects li {
+  list-style: none;
+  margin: 5px;
+}
+.about-container__projects li:before {
+  content: "- ";
+}
+.about-container__projects li a {
+  color: var(--off-black);
+  text-decoration-color: #ff9f31;
+}/*# sourceMappingURL=about.css.map */
