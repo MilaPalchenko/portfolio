@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+
+    .first-page-wrap { 
+        height: 100vh;
+    }
+
+    .clouds-background { 
+        position: absolute;
+        top: 10px;
+        z-index: -1000;
+    }
+
+    .about-container {
+        font-family: var(--main-font);
+        display: flex;
+        flex-direction: row;
+        
+        &__long-version { 
+            width: 100vw;
+        }
+        &__short-version { 
+            position: absolute;
+            top: 115px;
+            right: 40px;
+            width: 370px;
+            height: 630px;
+            border-radius: 15px;
+
+            &__wrap { 
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 40px;
+                width: 370px;
+                height: 630px;
+                background-color: #EDEDED;
+                border-radius: 15px;
+            }
+            &--title { 
+                font-size: 3rem;
+                text-align: center;
+            }
+            &--text { 
+                font-size: 1.8rem;
+                padding: 20px 20px 5px 20px;
+                margin-left: 15px;
+            }
+            &--text-title { 
+                font-size: 2.2rem;
+                margin-left: 35px;
+            }
+
+            .list { 
+                padding-left: 20px;
+                font-size: 1.8rem;
+                margin: 0px 10px 0 10px;
+                
+                &--title { 
+                    padding: 5px;
+                    margin-left: 15px;
+                    list-style: circle;
+                }
+                &--item { 
+                    margin-left: 30px;
+                    padding-left: 5px;
+                    list-style: "—";
+                }
+                a { 
+                    color: #5174bb;
+                    text-decoration: none;
+                    transition: 0.5s ease;
+                    &:hover { 
+                        color: #FF9C40;
+                        margin-left: 10px;
+                        transition: 0.5s ease;
+                    }
+                }
+            }
+            // ul { 
+            //     padding: 10px;
+            // }
+            // li { 
+            //     margin: 10px;
+            // }
+        }
+
+        &__profile-img {
+            border-radius: 10px;
+            height: 588px;
+            margin-top: 100px;
+            margin-left: 35px;
+            margin-right: 25px;
+            object-fit: cover;
+            width: 488px;
+            // z-index: 1000;
+        }
+        &__name-title {
+            font-size: 3rem;
+            text-align: left;
+            position: absolute;
+            top: 60px;
+            left: 410px;
+        }
+
+        // Костыльно, сделать по-другому. caused by float for image
+        &__about-text { 
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            height: 590px;
+            padding: 1px 25px;
+            position: absolute;
+            top: 99px;
+            left: 530px;
+            width: 930px;
+            
+        }
+        &__text { 
+            font-size: 2rem;
+            margin-top: 2.5rem;
+            position: relative;
+            text-align: justify;
+        }
+    }
+   
+}

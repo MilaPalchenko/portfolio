@@ -78,16 +78,16 @@ export default function ParallaxSunset() {
                                 <h2 className="skill-box__title underline-animation">Tech skills:</h2>
                                 <ul className="skill-box__list">
                                     <li className="skill-box__list--item underline-animation">
-                                        HTML
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        SCSS
+                                        React
                                     </li> <br />
                                     <li className="skill-box__list--item underline-animation">
                                         JavaScript
                                     </li> <br />
                                     <li className="skill-box__list--item underline-animation">
-                                        React
+                                        SASS
+                                    </li> <br />
+                                    <li className="skill-box__list--item underline-animation">
+                                        HTML
                                     </li> <br />
                                     <li className="skill-box__list--item underline-animation">
                                         English B2
