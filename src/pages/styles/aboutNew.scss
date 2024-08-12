@@ -16,8 +16,8 @@ section {
     font-size: 1.5rem;
     justify-content: center;
 
-    .first-page-wrap {
-        height: 80vh;
+    .first-page {
+        height: 100vh;
     }
 
     .clouds-background {
@@ -30,6 +30,11 @@ section {
         font-family: var(--main-font);
         display: flex;
         flex-direction: row;
+
+        /* margin-top to "fix" navbar not taking needed space as before
+        due to changing it from sticky to fixed position
+        and being lazy to rework all thing for now */
+        margin-top: 56px;
 
         &__long-version {
             width: 100vw;
@@ -137,7 +142,6 @@ section {
         display: flex;
         justify-content: center;
         gap: 25px;
-        transition: 0.5s ease;
 
         .project {
             background-color: #ededed;
@@ -145,7 +149,6 @@ section {
             font-family: var(--main-font);
             border: 2px solid #5174bb;
             cursor: pointer;
-            transition: 0.5s ease;
          
             &__img-preview {
                 width: 356px;
@@ -164,10 +167,108 @@ section {
                 &:hover {
                     animation: movetext 3s ease-in-out infinite;
                     color: #ff9c40;
+                    
                 }
             }
             &__link {
                 text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+
+    // second page
+
+    .second-page { 
+        display: flex;
+        flex-direction: row;
+        font-family: var(--main-font);
+        font-size: 3rem;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .work-experience { 
+        width: 600px;
+
+        &__title { 
+            text-align: end;
+            margin-bottom: 10px;
+        }
+
+        .job { 
+            &__title { 
+                color: #FF9C40;
+                font-size: 2.5rem;
+                text-align: end;
+                margin-bottom: 5px;
+            }
+            &__place { 
+                color: #333333;
+                font-size: 2.2rem;
+                font-weight: 600;
+            }
+            &__time-period { 
+                font-size: 1.8rem;
+                font-weight: 200;
+                text-align: end;
+                margin-bottom: 5px;
+            }
+            &__separator { 
+                font-weight: 600;
+            }
+            &__skills { 
+                font-size: 1.8rem;
+                font-weight: 400;
+                margin-bottom: 10px;
+                list-style: circle;
+                line-height: 2.5rem;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .time-curve { 
+        width: 381px;
+        height: 747px;
+        margin-top: 47px;
+        margin-right: 10px;
+    }
+    .education { 
+        width: 600px;
+
+        &__title { 
+            margin-bottom: 10px;
+        }
+       
+
+        .university, .certificates { 
+            &__header { 
+                margin-bottom: 10px;
+            }
+            &__title { 
+                color: #FF9C40;
+                font-size: 2.5rem;
+                margin-bottom: 5px;
+            }
+            &__time-period { 
+                font-size: 1.8rem;
+                font-weight: 200;
+                margin-bottom: 5px;
+            }
+            &__separator { 
+                font-weight: 600;
+            }
+            &__course { 
+                font-size: 2rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            &__img { 
+                height: 280px;
+                margin-bottom: 10px;
+            }
+            a { 
+                color: #333333;
                 text-decoration: none;
             }
         }
@@ -179,13 +280,13 @@ section {
         transform: translateY(0px);
     }
     25% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
     50% {
         transform: translateY(0px);
     }
     75% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
     100% {
         transform: translateY(0px);

@@ -16,8 +16,8 @@ section {
   font-size: 1.5rem;
   justify-content: center;
 }
-.wrapper .first-page-wrap {
-  height: 80vh;
+.wrapper .first-page {
+  height: 100vh;
 }
 .wrapper .clouds-background {
   position: absolute;
@@ -28,6 +28,10 @@ section {
   font-family: var(--main-font);
   display: flex;
   flex-direction: row;
+  /* margin-top to "fix" navbar not taking needed space as before
+  due to changing it from sticky to fixed position
+  and being lazy to rework all thing for now */
+  margin-top: 56px;
 }
 .wrapper .about-container__long-version {
   width: 100vw;
@@ -128,7 +132,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 25px;
-  transition: 0.5s ease;
 }
 .wrapper .projects .project {
   background-color: #ededed;
@@ -136,7 +139,6 @@ section {
   font-family: var(--main-font);
   border: 2px solid #5174bb;
   cursor: pointer;
-  transition: 0.5s ease;
 }
 .wrapper .projects .project__img-preview {
   width: 356px;
@@ -162,19 +164,103 @@ section {
   text-align: center;
   text-decoration: none;
 }
+.wrapper .second-page {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--main-font);
+  font-size: 3rem;
+  justify-content: center;
+  margin-top: 50px;
+}
+.wrapper .work-experience {
+  width: 600px;
+}
+.wrapper .work-experience__title {
+  text-align: end;
+  margin-bottom: 10px;
+}
+.wrapper .work-experience .job__title {
+  color: #FF9C40;
+  font-size: 2.5rem;
+  text-align: end;
+  margin-bottom: 5px;
+}
+.wrapper .work-experience .job__place {
+  color: #333333;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.wrapper .work-experience .job__time-period {
+  font-size: 1.8rem;
+  font-weight: 200;
+  text-align: end;
+  margin-bottom: 5px;
+}
+.wrapper .work-experience .job__separator {
+  font-weight: 600;
+}
+.wrapper .work-experience .job__skills {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  list-style: circle;
+  line-height: 2.5rem;
+  margin-left: 30px;
+}
+.wrapper .time-curve {
+  width: 381px;
+  height: 747px;
+  margin-top: 47px;
+  margin-right: 10px;
+}
+.wrapper .education {
+  width: 600px;
+}
+.wrapper .education__title {
+  margin-bottom: 10px;
+}
+.wrapper .education .university__header, .wrapper .education .certificates__header {
+  margin-bottom: 10px;
+}
+.wrapper .education .university__title, .wrapper .education .certificates__title {
+  color: #FF9C40;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+.wrapper .education .university__time-period, .wrapper .education .certificates__time-period {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+.wrapper .education .university__separator, .wrapper .education .certificates__separator {
+  font-weight: 600;
+}
+.wrapper .education .university__course, .wrapper .education .certificates__course {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.wrapper .education .university__img, .wrapper .education .certificates__img {
+  height: 280px;
+  margin-bottom: 10px;
+}
+.wrapper .education .university a, .wrapper .education .certificates a {
+  color: #333333;
+  text-decoration: none;
+}
 
 @keyframes movetext {
   0% {
     transform: translateY(0px);
   }
   25% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   50% {
     transform: translateY(0px);
   }
   75% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(0px);
