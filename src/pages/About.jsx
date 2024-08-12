@@ -120,7 +120,7 @@ export default function About() {
                             </div>
                             <div className="project">
                                 <a className="project__link" target="_blank"
-                                    href="https://recipe-site-mpal.netlify.app/">
+                                    href="https://to-do-list-react-test.netlify.app/">
                                     <img className="project__img-preview"
                                         src={Todo_site} alt="recipe-site" />
                                     <h2 className="project__title">{"< Todo-List >"}</h2>
@@ -128,7 +128,7 @@ export default function About() {
                             </div>
                             <div className="project">
                                 <a className="project__link" target="_blank"
-                                    href="https://recipe-site-mpal.netlify.app/">
+                                    href="https://random-quotes-mpal.netlify.app/">
                                     <img className="project__img-preview"
                                         src={Quotes_site} alt="recipe-site" />
                                     <h2 className="project__title">{"< Random Quotes >"}</h2>
@@ -136,7 +136,7 @@ export default function About() {
                             </div>
                             <div className="project">
                                 <a className="project__link" target="_blank"
-                                    href="https://recipe-site-mpal.netlify.app/">
+                                    href="https://darina-photographer.netlify.app/">
                                     <img className="project__img-preview"
                                         src={Business_card_site} alt="recipe-site" />
                                     <h2 className="project__title">{"< Business Card Site >"}</h2>
