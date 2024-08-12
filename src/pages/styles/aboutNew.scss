@@ -5,19 +5,24 @@
     scroll-behavior: smooth;
 }
 
+// "fix" so main page won't take all space and show start of the projects
+section {
+    height: 80vh;
+}
+
 .wrapper {
     align-items: center;
     display: flex;
     font-size: 1.5rem;
     justify-content: center;
 
-    .first-page-wrap { 
-        height: 100vh;
+    .first-page-wrap {
+        height: 80vh;
     }
 
-    .clouds-background { 
+    .clouds-background {
         position: absolute;
-        top: 10px;
+        top: 60px;
         z-index: -1000;
     }
 
@@ -25,11 +30,11 @@
         font-family: var(--main-font);
         display: flex;
         flex-direction: row;
-        
-        &__long-version { 
+
+        &__long-version {
             width: 100vw;
         }
-        &__short-version { 
+        &__short-version {
             position: absolute;
             top: 115px;
             right: 40px;
@@ -37,7 +42,7 @@
             height: 630px;
             border-radius: 15px;
 
-            &__wrap { 
+            &__wrap {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -45,59 +50,53 @@
                 top: 40px;
                 width: 370px;
                 height: 630px;
-                background-color: #EDEDED;
+                background-color: #ededed;
                 border-radius: 15px;
             }
-            &--title { 
+            &--title {
                 font-size: 3rem;
                 text-align: center;
             }
-            &--text { 
+            &--text {
                 font-size: 1.8rem;
                 padding: 20px 20px 5px 20px;
                 margin-left: 15px;
             }
-            &--text-title { 
+            &--text-title {
                 font-size: 2.2rem;
                 margin-left: 35px;
             }
 
-            .list { 
+            .list {
                 padding-left: 20px;
                 font-size: 1.8rem;
-                margin: 0px 10px 0 10px;
-                
-                &--title { 
+                margin: 5px 10px 5px 10px;
+
+                &--title {
                     padding: 5px;
                     margin-left: 15px;
                     list-style: circle;
                 }
-                &--item { 
+                &--item {
                     margin-left: 30px;
                     padding-left: 5px;
                     list-style: "—";
                 }
-                a { 
+                a {
                     color: #5174bb;
                     text-decoration: none;
                     transition: 0.5s ease;
-                    &:hover { 
-                        color: #FF9C40;
+                    &:hover {
+                        color: #ff9c40;
                         margin-left: 10px;
                         transition: 0.5s ease;
                     }
                 }
             }
-            // ul { 
-            //     padding: 10px;
-            // }
-            // li { 
-            //     margin: 10px;
-            // }
         }
 
         &__profile-img {
-            border-radius: 10px;
+            border-radius: 15px;
             height: 588px;
             margin-top: 100px;
             margin-left: 35px;
@@ -111,28 +110,84 @@
             text-align: left;
             position: absolute;
             top: 60px;
-            left: 410px;
+            left: 435px;
         }
 
         // Костыльно, сделать по-другому. caused by float for image
-        &__about-text { 
+        &__about-text {
             background-color: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             height: 590px;
             padding: 1px 25px;
             position: absolute;
-            top: 99px;
+            top: 98px;
             left: 530px;
             width: 930px;
-            
         }
-        &__text { 
-            font-size: 2rem;
+        &__text {
+            font-size: 1.85rem;
             margin-top: 2.5rem;
             position: relative;
             text-align: justify;
         }
     }
-   
+
+    .projects {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        transition: 0.5s ease;
+
+        .project {
+            background-color: #ededed;
+            border-radius: 15px;
+            font-family: var(--main-font);
+            border: 2px solid #5174bb;
+            cursor: pointer;
+            transition: 0.5s ease;
+         
+            &__img-preview {
+                width: 356px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom: 2px solid #5174bb;
+                object-fit: cover;
+                height: 190px;
+            }
+            &__title {
+                margin: 15px;
+                padding-bottom:5px;
+                color: #5174bb;
+                transition: 0.5s ease;
+                font-weight: 400;
+                &:hover {
+                    animation: movetext 3s ease-in-out infinite;
+                    color: #ff9c40;
+                }
+            }
+            &__link {
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@keyframes movetext {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }

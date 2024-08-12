@@ -3,6 +3,10 @@ import ProfilePic from '../assets/profile-pic.jpg'
 import './styles/aboutNew.css'
 import ScrollToTop from "../components/ScrollToTop";
 import Clouds_background from '../assets/layers/left-cloud-mid.png'
+import Recipe_site from '../assets/site-preview/recipe-preview.png'
+import Todo_site from '../assets/site-preview/todo-preview.png'
+import Quotes_site from '../assets/site-preview/quotes-preview.png'
+import Business_card_site from '../assets/site-preview/business-card-preview.png'
 
 export default function About() {
 
@@ -63,7 +67,9 @@ export default function About() {
                                 <aside className="about-container__short-version__wrap">
                                     <p className="about-container__short-version--text">27y.o. Kyiv.</p>
                                     <h1 className="about-container__short-version--text-title">Learned:</h1>
-                                    <ul className="list"> 
+                                    <ul className="list">
+
+                                        {/* !! fix coz list can't be in list !!*/}
                                         <li className="list--title">Adobe Photoshop in 2008:
                                             <li className="list--item">photo-editing</li>
                                             <li className="list--item">frame-by-frame animations;</li>
@@ -74,37 +80,71 @@ export default function About() {
                                         <li className="list--title">Very basic C++ in 2023.</li>
                                         <li className="list--title">HTML, CSS, JavaScript, React in the end of 2023-current time.</li>
                                         <li className="list--title">Basic knowledge of GitHub.</li>
+                                        <li className="list--title">Simple web-page design in Figma.</li>
                                     </ul>
                                     <h1 className="about-container__short-version--text-title">Project Links:</h1>
-                                    <ul className="list"> 
-                                    <li className="list--item">
-                                        <a href="">Recipe Site</a>
-                                    </li>
-                                    <li className="list--item">
-                                        <a href="">Todo-List</a>
-                                    </li>
-                                    <li className="list--item">
-                                        <a href="">Business Card Site</a>
-                                    </li>
-                                    <li className="list--item">
-                                        <a href="">Random Quotes</a>
-                                    </li>
-                                    <li className="list--item">
-                                        <a href="">Resume Card Site</a>
-                                    </li>
-                                    <li className="list--item">
-                                        <a href="">Weather Site</a>
-                                    </li>
-                                    <li className="list--item">
-                                        <a href="">CodePen Gallery</a>
-                                    </li>
+                                    <ul className="list">
+                                        <li className="list--item">
+                                            <a href="">Recipe Site</a>
+                                        </li>
+                                        <li className="list--item">
+                                            <a href="">Todo-List</a>
+                                        </li>
+                                        <li className="list--item">
+                                            <a href="">Business Card Site</a>
+                                        </li>
+                                        <li className="list--item">
+                                            <a href="">Random Quotes</a>
+                                        </li>
+                                        <li className="list--item">
+                                            <a href="">Resume Card Site</a>
+                                        </li>
+                                        <li className="list--item">
+                                            <a href="">Weather Site</a>
+                                        </li>
+                                        <li className="list--item">
+                                            <a href="">CodePen Gallery</a>
+                                        </li>
                                     </ul>
                                 </aside>
                             </section>
                         </div>
+                        <div className="projects">
+                            <div className="project">
+                                <a className="project__link" target="_blank"
+                                    href="https://recipe-site-mpal.netlify.app/">
+                                    <img className="project__img-preview"
+                                        src={Recipe_site} alt="recipe-site" />
+                                    <h2 className="project__title">{"< Recipe Site >"}</h2>
+                                </a>
+                            </div>
+                            <div className="project">
+                                <a className="project__link" target="_blank"
+                                    href="https://recipe-site-mpal.netlify.app/">
+                                    <img className="project__img-preview"
+                                        src={Todo_site} alt="recipe-site" />
+                                    <h2 className="project__title">{"< Todo-List >"}</h2>
+                                </a>
+                            </div>
+                            <div className="project">
+                                <a className="project__link" target="_blank"
+                                    href="https://recipe-site-mpal.netlify.app/">
+                                    <img className="project__img-preview"
+                                        src={Quotes_site} alt="recipe-site" />
+                                    <h2 className="project__title">{"< Random Quotes >"}</h2>
+                                </a>
+                            </div>
+                            <div className="project">
+                                <a className="project__link" target="_blank"
+                                    href="https://recipe-site-mpal.netlify.app/">
+                                    <img className="project__img-preview"
+                                        src={Business_card_site} alt="recipe-site" />
+                                    <h2 className="project__title">{"< Business Card Site >"}</h2>
+                                </a>
+                            </div>
+                        </div>
 
-
-                        <div className="about-container__projects-center">
+                        {/* <div className="about-container__projects-center">
                             <div className="about-container__projects">
                                 <h2 className="about-container__projects--title">Newer projects:</h2>
                                 <ul>
@@ -122,7 +162,7 @@ export default function About() {
                                     <li><a href="https://codepen.io/milapiu" target="_blank">CodePen gallery</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
 
 
                     </div>

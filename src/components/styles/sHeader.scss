@@ -22,12 +22,10 @@ header {
     }
 
     &__list {
-        
         display: flex; 
         flex-direction: row;
         list-style: none;
         margin-right: 30px;
-        
 
         &--button {
             background: #000000;
