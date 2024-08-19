@@ -74,7 +74,7 @@ export default function About() {
                                     </li>
                                     <li className="list--title">Very basic Java in 2021.</li>
                                     <li className="list--title">Very basic C++ in 2023.</li>
-                                    <li className="list--title">HTML, CSS, JavaScript, React in the end of 2023-current time.</li>
+                                    <li className="list--title">HTML, CSS, SASS, JavaScript, React in the end of 2023-current time.</li>
                                     <li className="list--title">Basic knowledge of GitHub.</li>
                                     <li className="list--title">Simple web-page design in Figma.</li>
                                 </ul>
