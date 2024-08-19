@@ -1,28 +1,28 @@
 .background {
+    left: -150px;
     position: absolute;
     top: 55px;
-    left: -150px;
     z-index: -999;
 }
 
 .container {
-    display: flex;
     align-items: center;
+    display: flex;
+    font-family: var(--main-font);
     justify-content: center;
     margin-top: 55px;
-    font-family: var(--main-font);
     .contacts {
         &__header {
-            font-size: 3rem;
-            text-align: center;
-            position: relative;
-            top: 165px;
-            background-color: rgba(255, 255, 255, 0.171);
-            width: 100vw;
             backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.171);
             border-top: 2px solid black;
             border-bottom: 2px solid black;
+            font-size: 3rem;
             padding: 5px;
+            position: relative;
+            text-align: center;
+            top: 165px;
+            width: 100vw;
         }
         &__titles-grouped { 
             background-color: white;
@@ -38,8 +38,8 @@
         &__items { 
             align-items: center;
             display: flex;
-            justify-content: center;
             height: 80vh;
+            justify-content: center;
             margin-top: -80px;
             &--img { 
                 height: 94px;
@@ -47,9 +47,9 @@
             }
         }
         &__hire-text { 
-            text-align: center;
             font-size: 2.5rem;
             margin-top: -240px;
+            text-align: center;
         }
         .cat-meme { 
             position: fixed;
@@ -59,7 +59,7 @@
         .cat-meme-text { 
             font-size: 2rem;
             position: fixed;
-            bottom: 30px;
+            bottom: 40px;
             right: 30px;
         }
     }
