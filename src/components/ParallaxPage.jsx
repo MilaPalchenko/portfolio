@@ -1,6 +1,11 @@
-import "./styles/parallax.css"
+// styles
+import "../scss/components/_parallax-page.scss"
+
+
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
+// images
+// !! fix names
 import background from '../assets/layers/background.png'
 import cloudsTop from '../assets/layers/clouds-top.png'
 import cloudsBottom from '../assets/layers/clouds-bottom-full.png'

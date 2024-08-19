@@ -1,7 +1,12 @@
+// style
+import '../scss/globals/_about.scss'
+
+// components
 import Header from "../components/Header";
-import ProfilePic from '../assets/profile-pic.jpg'
-import './styles/aboutNew.css'
 import ScrollToTop from "../components/ScrollToTop";
+
+// images
+import ProfilePic from '../assets/profile-pic.jpg'
 import Clouds_background from '../assets/layers/left-cloud-mid.png'
 import Recipe_site from '../assets/site-preview/recipe-preview.png'
 import Todo_site from '../assets/site-preview/todo-preview.png'

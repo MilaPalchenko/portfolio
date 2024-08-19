@@ -1,6 +1,10 @@
-import './styles/scroll-to-top.css';
+// styles 
+import '../scss/components/_scroll-to-top.scss'
+
+
 import React, { useState, useEffect } from 'react';
 
+// images
 import ArrowUp from '../assets/icons-arrow-up-50.png'
 
 // doesn't work with ParallaxLayers due to Parallax not actually creating 2nd page

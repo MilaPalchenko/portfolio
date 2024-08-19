@@ -1,5 +1,8 @@
+// styles 
+import '../scss/components/_header.scss'
+
 import { Link } from "react-router-dom"
-import './styles/sHeader.css'
+
 
 function Header() {
 

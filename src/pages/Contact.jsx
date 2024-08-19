@@ -1,3 +1,7 @@
+// styles 
+
+
+// components
 import Header from "../components/Header";
 
 

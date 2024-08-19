@@ -1,12 +1,12 @@
 import Header from "../components/Header";
-import ParallaxSunset from "../components/ParallaxSunset";
+import ParallaxPage from "../components/ParallaxPage";
 
 export default function Home() {
 
     return (<>
         <Header />
         <main>
-            <ParallaxSunset />
+            <ParallaxPage />
         </main>
 
     </>);
