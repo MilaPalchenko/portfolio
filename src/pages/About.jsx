@@ -64,14 +64,14 @@ export default function About() {
                                 <p className="about-container__short-version--text">27y.o. Kyiv.</p>
                                 <h1 className="about-container__short-version--text-title">Learned:</h1>
                                 <ul className="list">
-
-                                    {/* !! fix coz list can't be in list !!*/}
-                                    <li className="list--title">Adobe Photoshop in 2008:
+                                    <ul className="list--title">
+                                        <li className="list--nested-title">Adobe Photoshop in 2008:</li>
                                         <li className="list--item">photo-editing</li>
                                         <li className="list--item">frame-by-frame animations;</li>
                                         <li className="list--item">seamless images;</li>
                                         <li className="list--item">blog site-pages design.</li>
-                                    </li>
+                                    </ul>
+                                    <li className="list--title">English B2.</li>
                                     <li className="list--title">Very basic Java in 2021.</li>
                                     <li className="list--title">Very basic C++ in 2023.</li>
                                     <li className="list--title">HTML, CSS, SASS, JavaScript, React in the end of 2023-current time.</li>

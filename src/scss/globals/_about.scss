@@ -74,9 +74,11 @@ section {
 
             .list {
                 padding-left: 20px;
-                font-size: 1.8rem;
+                font-size: 1.7rem;
                 margin: 5px 10px 5px 10px;
-
+                &--nested-title { 
+                    margin-left: -6px;
+                }
                 &--title {
                     padding: 5px;
                     margin-left: 15px;
