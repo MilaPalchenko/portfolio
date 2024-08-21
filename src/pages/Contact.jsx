@@ -5,16 +5,13 @@ import '../scss/globals/_contact.scss'
 import Header from "../components/Header";
 
 // images
-
-//fix coulds file 
-import Clouds from "../assets/clouds-top.png" 
-import Cat_meme from "../assets/cat-meme.png"
-
-import Github from "../assets/contact-icons/github.png"
-import LinkedIn from "../assets/contact-icons/linkedin.png"
-import Telegram from "../assets/contact-icons/telegram.png"
-import Email from "../assets/contact-icons/email.png"
-import Phone from "../assets/contact-icons/phone-call.png"
+import Clouds from "../assets/contact-page/clouds-top.png" 
+import Cat_meme from "../assets/contact-page/cat-meme.png"
+import Github from "../assets/contact-page/contact-icons/github.png"
+import LinkedIn from "../assets/contact-page/contact-icons/linkedin.png"
+import Telegram from "../assets/contact-page/contact-icons/telegram.png"
+import Email from "../assets/contact-page/contact-icons/email.png"
+import Phone from "../assets/contact-page/contact-icons/phone-call.png"
 
 export default function Contact() {
     return (<>

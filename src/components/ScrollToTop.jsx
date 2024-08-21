@@ -5,7 +5,7 @@ import '../scss/components/_scroll-to-top.scss'
 import React, { useState, useEffect } from 'react';
 
 // images
-import ArrowUp from '../assets/icons-arrow-up-50.png'
+import Arrow_up from '../assets/components/scroll-to-top/icon-arrow-up.png'
 
 // doesn't work with ParallaxLayers due to Parallax not actually creating 2nd page
 // works if pages are something like <div> containers and take more than 100vh total
@@ -34,10 +34,12 @@ const ScrollToTop = () => {
 
     return (
         <div className="scroll-to-top-btn">
-            <button className='icon-position icon-style' onClick={goToTop}>
-                <img src={ArrowUp}
-                className='arrow-image'></img>
-            </button>
+            {showTopBtn && (
+                <button className='icon-position icon-style' onClick={goToTop}>
+                    <img src={Arrow_up}
+                        className='arrow-image'></img>
+                </button>
+            )}
         </div>
     );
 };

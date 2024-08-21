@@ -19,6 +19,7 @@
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     margin: auto;
+    animation: changeColor 0.3s ease ;
   
     &:hover {
       animation: none;
@@ -48,6 +49,24 @@
     }
     100% {
       transform: translateY(0px);
+    }
+  }
+
+  @keyframes changeColor { 
+    0% {
+      background-color: hsla(4, 99%, 66%, 0);
+    }
+    25%{
+      background-color: hsla(4, 99%, 66%, 0.25);
+    }
+    50% { 
+      background-color: hsla(4, 99%, 66%, 0.5);
+    }
+    75% { 
+      background-color: hsla(4, 99%, 66%, 0.75);
+    }
+    100%{ 
+      background-color: hsla(4, 99%, 66%);
     }
   }
   

@@ -6,11 +6,11 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 // images
 // !! fix names
-import background from '../assets/layers/background.png'
-import cloudsTop from '../assets/layers/clouds-top.png'
-import cloudsBottom from '../assets/layers/clouds-bottom-full.png'
-import rightCloudWithSun from '../assets/layers/right-cloud-with-sun.png'
-import leftCloud from '../assets/layers/left-cloud-mid.png'
+import Background from '../assets/home-page/layers/background.png'
+import Clouds_top from '../assets/home-page/layers/clouds-top.png'
+import Right_cloud_with_sun from '../assets/home-page/layers/right-cloud-with-sun.png'
+import Left_cloud from '../assets/home-page/layers/left-cloud-mid.png'
+import Clouds_bottom from '../assets/home-page/layers/clouds-bottom-full.png'
 
 export default function ParallaxSunset() {
 
@@ -21,7 +21,7 @@ export default function ParallaxSunset() {
 
                 </ParallaxLayer>
                 <ParallaxLayer>
-                    <img id="background" src={background} />
+                    <img id="background" src={Background} />
                 </ParallaxLayer>
 
                 <ParallaxLayer
@@ -31,22 +31,22 @@ export default function ParallaxSunset() {
 
                 <ParallaxLayer
                     speed={0.6}>
-                    <img id="clouds-top" src={cloudsTop} />
+                    <img id="clouds-top" src={Clouds_top} />
                 </ParallaxLayer>
 
                 <ParallaxLayer
                     speed={-0.45}>
-                    <img id="clouds-mid" src={rightCloudWithSun} />
+                    <img id="clouds-mid" src={Right_cloud_with_sun} />
                 </ParallaxLayer>
 
                 <ParallaxLayer
                     speed={-0.45}>
-                    <img id="clouds-mid" src={leftCloud} />
+                    <img id="clouds-mid" src={Left_cloud} />
                 </ParallaxLayer>
 
                 <ParallaxLayer
                     speed={-0.48}>
-                    <img id="clouds-bottom" src={cloudsBottom} />
+                    <img id="clouds-bottom" src={Clouds_bottom} />
                 </ParallaxLayer>
 
                 <ParallaxLayer

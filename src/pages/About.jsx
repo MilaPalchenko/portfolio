@@ -6,15 +6,15 @@ import Header from "../components/Header";
 import ScrollToTop from "../components/ScrollToTop";
 
 // images
-import ProfilePic from '../assets/profile-pic.jpg'
-import Clouds_background from '../assets/layers/left-cloud-mid.png'
-import Recipe_site from '../assets/site-preview/recipe-preview.png'
-import Todo_site from '../assets/site-preview/todo-preview.png'
-import Quotes_site from '../assets/site-preview/quotes-preview.png'
-import Business_card_site from '../assets/site-preview/business-card-preview.png'
-import Time_curve from '../assets/time-curve.png'
-import Shecodes_certificate from '../assets/sertificates/shecodes.png'
-import Freecodepen_certificate from '../assets/sertificates/freeCodePen.jpg'
+import Profile_picture from '../assets/about-page/profile-pic.jpg'
+import Clouds_background from '../assets/about-page/left-cloud-mid.png'
+import Recipe_site from '../assets/about-page/site-preview/recipe-preview.png'
+import Todo_site from '../assets/about-page/site-preview/todo-preview.png'
+import Quotes_site from '../assets/about-page/site-preview/quotes-preview.png'
+import Business_card_site from '../assets/about-page/site-preview/business-card-preview.png'
+import Time_curve from '../assets/about-page/time-curve.png'
+import Shecodes_certificate from '../assets/about-page/sertificates/shecodes.png'
+import Freecodepen_certificate from '../assets/about-page/sertificates/freeCodePen.jpg'
 
 export default function About() {
 
@@ -28,7 +28,7 @@ export default function About() {
                         src={Clouds_background} alt="" />
                     <div className="about-container">
                         <section className="about-container__long-version">
-                            <img className="about-container__profile-img" src={ProfilePic} />
+                            <img className="about-container__profile-img" src={Profile_picture} />
                             <h1 className="about-container__name-title">Hi, I'm Liudmyla! </h1>
                             <article className="about-container__about-text">
                                 <p className="about-container__text"> 27 years old. Based in Kyiv. </p>
