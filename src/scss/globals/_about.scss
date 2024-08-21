@@ -55,7 +55,7 @@ section {
                 top: 40px;
                 width: 370px;
                 height: 630px;
-                background-color: #ededed;
+                background-color: var(--about-wrap-background);
                 border-radius: 15px;
             }
             &--title {
@@ -90,11 +90,11 @@ section {
                     list-style: "—";
                 }
                 a {
-                    color: #5174bb;
+                    color: var(--link-color);
                     text-decoration: none;
                     transition: 0.5s ease;
                     &:hover {
-                        color: #ff9c40;
+                        color: var(--accent-orange);
                         margin-left: 10px;
                         transition: 0.5s ease;
                     }
@@ -120,9 +120,8 @@ section {
             left: 435px;
         }
 
-        // Костыльно, сделать по-другому. caused by float for image
         &__about-text {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: var(--about-text-background);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             height: 590px;
@@ -146,29 +145,29 @@ section {
         gap: 25px;
 
         .project {
-            background-color: #ededed;
+            background-color: var(--about-wrap-background);
             border-radius: 15px;
             font-family: var(--main-font);
-            border: 2px solid #5174bb;
+            border: 2px solid var(--link-color);
             cursor: pointer;
          
             &__img-preview {
                 width: 356px;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
-                border-bottom: 2px solid #5174bb;
+                border-bottom: 2px solid var(--link-color);
                 object-fit: cover;
                 height: 190px;
             }
             &__title {
                 margin: 15px;
                 padding-bottom:5px;
-                color: #5174bb;
+                color: var(--link-color);
                 transition: 0.5s ease;
                 font-weight: 400;
                 &:hover {
                     animation: movetext 3s ease-in-out infinite;
-                    color: #ff9c40;
+                    color: var(--accent-orange);
                     
                 }
             }
@@ -199,7 +198,7 @@ section {
 
         .job { 
             &__title { 
-                color: #FF9C40;
+                color: var(--accent-orange);
                 font-size: 2.5rem;
                 text-align: end;
                 margin-bottom: 5px;
@@ -248,7 +247,7 @@ section {
                 margin-bottom: 10px;
             }
             &__title { 
-                color: #FF9C40;
+                color: var(--accent-orange);
                 font-size: 2.5rem;
                 margin-bottom: 5px;
             }
@@ -268,10 +267,6 @@ section {
             &__img { 
                 height: 280px;
                 margin-bottom: 10px;
-            }
-            a { 
-                color: #333333;
-                text-decoration: none;
             }
         }
     }

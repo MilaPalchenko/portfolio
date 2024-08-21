@@ -10,18 +10,18 @@ html {
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 0; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
+    width: 0; /* Remove scrollbar space */
 }
 
 #wrapper {
+    background: var(--wrapper-gradient);
     box-sizing: border-box;
-    background: linear-gradient(180deg, #ff9f31 100%, #000);
 }
 
 #profile-image {
-    width: 300px;
     height: 300px;
+    width: 300px;
 }
 
 // section::before {
@@ -35,41 +35,41 @@ html {
 // }
 
 #title {
-    position: absolute;
-    color: white;
-    white-space: nowrap;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: var(--white);
+    font-family: var(--secondary-font);
     font-size: 4rem;
-    z-index: 12;
-    text-shadow: 2px 2px 2px #838383;
-    width: 100%;
     height: 100vh;
-    top: 200px;
     left: 40%;
+    position: absolute;
+    text-shadow: 2px 2px 2px var(--text-shadow);
+    top: 200px;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 12;
 }
 
 .wrap-section {
-    position: relative;
     height: 100vh;
+    position: relative;
 }
 
 section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
     display: flex;
+    height: 100vh;
     justify-content: center;
     overflow-x: hidden;
     overflow-y: hidden;
+    position: relative;
+    width: 100%;
 
     img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
         height: 100%;
+        left: 0;
         object-fit: cover;
         pointer-events: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
 }
 
@@ -89,7 +89,7 @@ section {
 
 .intro-info {
     align-content: center;
-    background: linear-gradient(180deg, #ff9f3100 0%, #b2a1ccb7 100%);
+    background: var(--intro-gradient);
     display: grid;
     font-family: var(--main-font);
     font-size: 3rem;
@@ -109,7 +109,7 @@ section {
     display: inline-block;
 
     &:after {
-        background: radial-gradient(circle, rgba(254, 95, 85, 1) 29%, rgba(79, 99, 103, 0) 100%);
+        background: var(--underline-gradient);
         content: "";
         display: block;
         height: 2px;
@@ -128,8 +128,6 @@ section {
 
 .skill-box-wrapper { 
     align-content: space-between;
-    //background: #ffffff23; // background: #aa785c48;
-    //border: 1px solid var(--accent-red);
     display: flex;
     justify-content: center;
     margin: auto;
@@ -146,17 +144,17 @@ section {
     width: 320px;
     //set size of the title text box
     grid-template-rows: 60px 1fr;
-    background: #aa785c48;
+    background: var(--skill-box-background);
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    box-shadow: 0px 0px 15px #2020203b;
+    box-shadow: 0px 0px 15px var(--skill-box-shadow);
 
     &__title {
         color: var(--white);
         font-size: 3.5rem;
         margin-bottom: 20px;
         text-align: center;
-        text-shadow: 2px 2px #6d6d6d7c;
+        text-shadow: 2px 2px var(--skill-box-title-shadow);
 
     }
 
@@ -164,7 +162,7 @@ section {
         font-size: 2.5rem;
 
         &--item {
-            text-shadow: 2px 2px 2px #8383839d;
+            text-shadow: 2px 2px 2px var(--skill-box-list-shadow);
             padding-bottom: 3px;
             &:before {
                 content: "•";

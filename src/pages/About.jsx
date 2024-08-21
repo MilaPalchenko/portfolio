@@ -33,27 +33,26 @@ export default function About() {
                             <article className="about-container__about-text">
                                 <p className="about-container__text"> 27 years old. Based in Kyiv. </p>
 
-                                <p className="about-container__text">Curios personality. Know how to google. Cat person. Into aesthetics.
-                                    Learned English by binge-watching tv-shows. And passionate about things I like.
+                                <p className="about-container__text">Curios personality. Knows how to google. Cat person. Into aesthetics.
+                                    Learned English by binge-watching TV-shows. And passionate about things I like.
                                     Leading to currently learning coding, which is being front-end, to be exact.</p>
 
-                                <p className="about-container__text">Gained some Adobe Photoshop and Adobe ImageReady skills during 2008, working in CS2 version.
-                                    Such as photo-editing, frame-by-frame animations, seamless images, creating blog-type site-pages designs from scratch. </p>
-
-                                <p className="about-container__text">First came across anything remotely close to coding in 2010, seeing totally
+                                <p className="about-container__text">Gained some Adobe Photoshop and Adobe ImageReady skills in 2008, working in CS2 version.
+                                    These skills include photo-editing, frame-by-frame animations, seamless images, and creating blog-type site designs from scratch. 
+                                </p>
+                                <p className="about-container__text">First encountered anything remotely close to coding in 2010, seeing totally
                                     different and personalised Tumblr pages, leading to wanting to create page of my own, simply for the sake of
-                                    just having it. Yet failing due to not knowing English at all and finding it a bit too complicated, which were
-                                    just HTML and CSS at the times.
-
+                                    just having it. However failed due to not knowing English at all and found it a bit too complicated, even tho 
+                                    it was just HTML and CSS at the times.
                                 </p>
-                                <p className="about-container__text">Later on coming back to the idea of coding in the end of 2021 after getting to see what
-                                    friend was doing as one of his projects and asking them for basic explanation about what the field itself is. Which led to
-                                    curiosity in the coding itself on top of the wish to creating something myself and explanation of the basics of loops
-                                    and data types and being able to make simple app such as student's grade calculator in React, using only syntax explanations,
-                                    excluding any other possible sources of learning.
+                                <p className="about-container__text">Later, I revisited the idea of coding at the end of 2021 after observing a 
+                                    friend working on one of his projects. I asked him for a basic explanation of what the field entails. This 
+                                    sparked my curiosity about coding itself, along with a desire to create something on my own. I learned the 
+                                    basics of loops and data types and managed to build a simple app, like a student’s grade calculator in React, 
+                                    using only syntax explanations without relying on any other learning resources.
                                 </p>
-                                <p className="about-container__text">Stopped the coding learning in 2022 due to full scaled invasion and coming back to it
-                                    in 2024, creating multiple projects listed down.
+                                <p className="about-container__text">Stopped learning to code in 2022 due to the full-scale invasion and recently 
+                                    resumed in 2024, working on multiple projects listed below.
                                 </p>
                             </article>
                         </section>

@@ -13,7 +13,6 @@ const ScrollToTop = () => {
 
     const [showTopBtn, setShowTopBtn] = useState(false);
 
-    // doesn't animate button to appear and disappear 
     useEffect(() => {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 400) {
@@ -24,7 +23,6 @@ const ScrollToTop = () => {
         });
     }, []);
 
-    // works
     const goToTop = () => {
         window.scrollTo({
             top: 0,
