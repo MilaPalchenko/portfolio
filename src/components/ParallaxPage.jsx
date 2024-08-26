@@ -4,8 +4,10 @@ import "../scss/components/_parallax-page.scss"
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
+//components
+import SkillsBlock from "./SkillsBlock"
+
 // images
-// !! fix names
 import Background from '../assets/home-page/layers/background.png'
 import Clouds_top from '../assets/home-page/layers/clouds-top.png'
 import Right_cloud_with_sun from '../assets/home-page/layers/right-cloud-with-sun.png'
@@ -17,9 +19,6 @@ export default function ParallaxSunset() {
     return (<div id="wrapper">
         <section className='wrap-section'>
             <Parallax pages={2} >
-                <ParallaxLayer>
-
-                </ParallaxLayer>
                 <ParallaxLayer>
                     <img id="background" src={Background} />
                 </ParallaxLayer>
@@ -52,60 +51,8 @@ export default function ParallaxSunset() {
                 <ParallaxLayer
                     offset={1}
                     speed={1}>
-                        
-                    <div className="intro-info">
-                        <div className="skill-box-wrapper">
-                            <div className="skill-box">
-                                <h2 className="skill-box__title underline-animation">Soft skills:</h2>
-                                <ul className="skill-box__list">
-                                    <li className="skill-box__list--item underline-animation">
-                                        Dedicated
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        Commited
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        Hardworking
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        Communicative
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        Adaptive
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        Open-minded
-                                    </li> <br />
-                                </ul>
-                            </div>
-
-                            <div className="skill-box">
-                                <h2 className="skill-box__title underline-animation">Tech skills:</h2>
-                                <ul className="skill-box__list">
-                                    <li className="skill-box__list--item underline-animation">
-                                        React
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        JavaScript
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        SASS
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        HTML
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        English B2
-                                    </li> <br />
-                                    <li className="skill-box__list--item underline-animation">
-                                        Adobe Photoshop
-                                    </li> <br />
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                        <SkillsBlock />
                 </ParallaxLayer>
-
             </Parallax>
         </section>
     </div>

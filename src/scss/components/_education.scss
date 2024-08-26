@@ -1,0 +1,36 @@
+.education { 
+    width: 600px;
+
+    &__title { 
+        margin-bottom: 10px;
+    }
+   
+
+    .university, .certificates { 
+        &__header { 
+            margin-bottom: 10px;
+        }
+        &__title { 
+            color: var(--accent-orange);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        &__time-period { 
+            font-size: 1.8rem;
+            font-weight: 200;
+            margin-bottom: 5px;
+        }
+        &__separator { 
+            font-weight: 600;
+        }
+        &__course { 
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        &__img { 
+            height: 280px;
+            margin-bottom: 10px;
+        }
+    }
+}

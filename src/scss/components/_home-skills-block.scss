@@ -1,0 +1,44 @@
+
+
+.skill-box-wrapper { 
+    background-color: var(--dark-grey);
+    border-top: 2px solid var(--accent-red);
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    height: 70vh;
+    justify-content: center;
+    position: fixed;
+    top: 300px;
+    width: 100vw; 
+}
+
+.skill-box { 
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    margin-top: 50px;
+    width: 600px;
+    &__title { 
+        color: var(--white);
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+        text-shadow: 2px 2px var(--skill-box-title-shadow);
+    }
+
+    &__block { 
+       text-align: center;
+        &--btn { 
+            background: var(--black);
+            border: none;
+            border-radius: 25px;
+            color: var(--white);
+            font-family: var(--main-font);
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 5px;
+            padding: 10px 25px;
+        }
+    }
+}

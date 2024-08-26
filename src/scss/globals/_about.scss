@@ -22,7 +22,7 @@ section {
 
     .clouds-background {
         position: absolute;
-        top: 60px;
+        top: 140px;
         z-index: -1000;
     }
 
@@ -35,151 +35,9 @@ section {
         due to changing it from sticky to fixed position
         and being lazy to rework all thing for now */
         margin-top: 56px;
-
-        &__long-version {
-            width: 100vw;
-        }
-        &__short-version {
-            position: absolute;
-            top: 115px;
-            right: 40px;
-            width: 370px;
-            height: 630px;
-            border-radius: 15px;
-
-            &__wrap {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                position: absolute;
-                top: 40px;
-                width: 370px;
-                height: 630px;
-                background-color: var(--about-wrap-background);
-                border-radius: 15px;
-            }
-            &--title {
-                font-size: 3rem;
-                text-align: center;
-            }
-            &--text {
-                font-size: 1.8rem;
-                padding: 20px 20px 5px 20px;
-                margin-left: 15px;
-            }
-            &--text-title {
-                font-size: 2.2rem;
-                margin-left: 35px;
-            }
-
-            .list {
-                padding-left: 20px;
-                font-size: 1.7rem;
-                margin: 5px 10px 5px 10px;
-                &--nested-title { 
-                    margin-left: -6px;
-                }
-                &--title {
-                    padding: 5px;
-                    margin-left: 15px;
-                    list-style: circle;
-                }
-                &--item {
-                    margin-left: 30px;
-                    padding-left: 5px;
-                    list-style: "—";
-                }
-                a {
-                    color: var(--link-color);
-                    text-decoration: none;
-                    transition: 0.5s ease;
-                    &:hover {
-                        color: var(--accent-orange);
-                        margin-left: 10px;
-                        transition: 0.5s ease;
-                    }
-                }
-            }
-        }
-
-        &__profile-img {
-            border-radius: 15px;
-            height: 588px;
-            margin-top: 100px;
-            margin-left: 35px;
-            margin-right: 25px;
-            object-fit: cover;
-            width: 488px;
-            // z-index: 1000;
-        }
-        &__name-title {
-            font-size: 3rem;
-            text-align: left;
-            position: absolute;
-            top: 60px;
-            left: 435px;
-        }
-
-        &__about-text {
-            background-color: var(--about-text-background);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            height: 590px;
-            padding: 1px 25px;
-            position: absolute;
-            top: 98px;
-            left: 530px;
-            width: 930px;
-        }
-        &__text {
-            font-size: 1.85rem;
-            margin-top: 2.5rem;
-            position: relative;
-            text-align: justify;
-        }
-    }
-
-    .projects {
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-
-        .project {
-            background-color: var(--about-wrap-background);
-            border-radius: 15px;
-            font-family: var(--main-font);
-            border: 2px solid var(--link-color);
-            cursor: pointer;
-         
-            &__img-preview {
-                width: 356px;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                border-bottom: 2px solid var(--link-color);
-                object-fit: cover;
-                height: 190px;
-            }
-            &__title {
-                margin: 15px;
-                padding-bottom:5px;
-                color: var(--link-color);
-                transition: 0.5s ease;
-                font-weight: 400;
-                &:hover {
-                    animation: movetext 3s ease-in-out infinite;
-                    color: var(--accent-orange);
-                    
-                }
-            }
-            &__link {
-                text-align: center;
-                text-decoration: none;
-            }
-        }
     }
 
     // second page
-
     .second-page { 
         display: flex;
         flex-direction: row;
@@ -188,88 +46,14 @@ section {
         justify-content: center;
         margin-top: 50px;
     }
-    .work-experience { 
-        width: 600px;
-
-        &__title { 
-            text-align: end;
-            margin-bottom: 10px;
-        }
-
-        .job { 
-            &__title { 
-                color: var(--accent-orange);
-                font-size: 2.5rem;
-                text-align: end;
-                margin-bottom: 5px;
-            }
-            &__place { 
-                color: #333333;
-                font-size: 2.2rem;
-                font-weight: 600;
-            }
-            &__time-period { 
-                font-size: 1.8rem;
-                font-weight: 200;
-                text-align: end;
-                margin-bottom: 5px;
-            }
-            &__separator { 
-                font-weight: 600;
-            }
-            &__skills { 
-                font-size: 1.8rem;
-                font-weight: 400;
-                margin-bottom: 10px;
-                list-style: circle;
-                line-height: 2.5rem;
-                margin-left: 30px;
-            }
-        }
-    }
-
+    
     .time-curve { 
         width: 381px;
         height: 747px;
         margin-top: 47px;
         margin-right: 10px;
     }
-    .education { 
-        width: 600px;
-
-        &__title { 
-            margin-bottom: 10px;
-        }
-       
-
-        .university, .certificates { 
-            &__header { 
-                margin-bottom: 10px;
-            }
-            &__title { 
-                color: var(--accent-orange);
-                font-size: 2.5rem;
-                margin-bottom: 5px;
-            }
-            &__time-period { 
-                font-size: 1.8rem;
-                font-weight: 200;
-                margin-bottom: 5px;
-            }
-            &__separator { 
-                font-weight: 600;
-            }
-            &__course { 
-                font-size: 2rem;
-                font-weight: 600;
-                margin-bottom: 10px;
-            }
-            &__img { 
-                height: 280px;
-                margin-bottom: 10px;
-            }
-        }
-    }
+    
 }
 
 @keyframes movetext {
