@@ -1,0 +1,99 @@
+@media screen and (max-width: 450px) {
+    html {
+        scroll-padding-top: 48px;
+        /*used so when you click on link it doesn't
+                                jump to the very top of the page or block 
+                                starter. Instead it "reserves" some space
+                                w/o affecting the page formatting*/
+    }
+   
+    body {
+        max-width: 40rem;
+    }
+    .test { 
+        background-color: blue;
+    }
+    .off-screen-menu {
+        align-items: center;
+        background-color: var(--off-black);
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        justify-content: center;
+        height: 105vh;
+        padding-top: 15px;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        touch-action: none;
+        transition: .3s ease;
+        width: 90%;
+        
+    }
+    .active { 
+        right: 0;
+    }
+    nav {
+        display: flex;
+        padding-left: 1rem;
+    }
+
+    #ham-menu-position {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+
+    .ham-menu {
+        height: 40px;
+        margin-left: auto;
+        position: fixed;
+        right: 18px;
+        top: 8px;
+        width: 40px;
+    }
+
+    .ham-menu span {
+        background-color: var(--off-white);
+        border-radius: 25px;
+        height: 5px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+    }
+
+    .nav-list {
+        list-style: none;
+        margin-top: -100px;
+    }
+}

@@ -8,6 +8,7 @@ import ContactLinks from '../components/ContactLinks';
 // images
 import Clouds from "../assets/contact-page/clouds-top.png"
 import Cat_meme from "../assets/contact-page/cat-meme.png"
+import HamburgerMenu from '../components/HamburgerMenu';
 
 
 export default function Contact() {

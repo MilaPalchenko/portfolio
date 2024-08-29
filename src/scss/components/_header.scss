@@ -28,6 +28,12 @@ header {
         list-style: none;
         margin-right: 30px;
 
+
+        // add hamburger menu here
+        @media only screen and (max-width: 450px) {
+         display: none;   
+        }
+
         &--button {
             background: #000000;
             border: none;

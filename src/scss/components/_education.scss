@@ -1,12 +1,23 @@
 .education { 
     width: 600px;
 
+    @media only screen and (max-width: 450px) {
+        margin: 5px;
+         width: 95%;   
+    }
+
     &__title { 
         margin-bottom: 10px;
+        @media only screen and (max-width: 450px) {
+            margin-left: 15px;   
+        }
     }
    
 
     .university, .certificates { 
+        @media only screen and (max-width: 450px) {
+            text-align: end;
+        }
         &__header { 
             margin-bottom: 10px;
         }
@@ -31,6 +42,9 @@
         &__img { 
             height: 280px;
             margin-bottom: 10px;
+            @media only screen and (max-width: 450px) {
+                height: 200px;
+            }
         }
     }
 }

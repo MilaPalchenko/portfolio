@@ -1,9 +1,18 @@
 .work-experience { 
     width: 600px;
+    @media only screen and (max-width: 450px) {
+        margin: 5px;
+        width: 95%;   
+    }
 
     &__title { 
         text-align: end;
         margin-bottom: 10px;
+
+        @media only screen and (max-width: 450px) {
+            margin-left: 15px;
+            text-align: start;
+        }
     }
 
     .job { 
@@ -34,6 +43,9 @@
             list-style: circle;
             line-height: 2.5rem;
             margin-left: 30px;
+            @media only screen and (max-width: 450px) {
+                margin-left: 45px;
+            }
         }
     }
 }

@@ -16,6 +16,9 @@ section {
     font-size: 1.5rem;
     justify-content: center;
 
+    @media only screen and (max-width: 450px) {
+        flex-direction: column;  
+    }
     .first-page {
         height: 100vh;
     }
@@ -24,17 +27,22 @@ section {
         position: absolute;
         top: 140px;
         z-index: -1000;
+        @media only screen and (max-width: 450px) {
+            display: none;
+        }
     }
 
     .about-container {
         font-family: var(--main-font);
         display: flex;
         flex-direction: row;
-
         /* margin-top to "fix" navbar not taking needed space as before
         due to changing it from sticky to fixed position
         and being lazy to rework all thing for now */
         margin-top: 56px;
+        @media only screen and (max-width: 450px) {
+           flex-direction: column;
+        }
     }
 
     // second page
@@ -45,6 +53,10 @@ section {
         font-size: 3rem;
         justify-content: center;
         margin-top: 50px;
+        @media only screen and (max-width: 450px) {
+       flex-direction: column;
+       max-width: 400px;
+        }
     }
     
     .time-curve { 
@@ -52,6 +64,9 @@ section {
         height: 747px;
         margin-top: 47px;
         margin-right: 10px;
+        @media only screen and (max-width: 450px) {
+            display: none;
+        }
     }
     
 }

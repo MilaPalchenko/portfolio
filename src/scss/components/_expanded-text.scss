@@ -2,14 +2,18 @@
     font-family: var(--main-font);
     display: flex;
     flex-direction: row;
-
     /* margin-top to "fix" navbar not taking needed space as before
     due to changing it from sticky to fixed position
     and being lazy to rework all thing for now */
     margin-top: 56px;
-
+    @media only screen and (max-width: 450px) {
+            display: grid;
+    }
     &__long-version {
         width: 100vw;
+        @media only screen and (max-width: 450px) {
+            height: 1600px;
+        }
     }
 
     &__profile-img {
@@ -21,6 +25,12 @@
         object-fit: cover;
         width: 488px;
         // z-index: 1000;
+        @media only screen and (max-width: 450px) {
+           width: 90%;
+           height: 400px;
+           margin: 75px 10px 10px 20px;
+        }
+        
     }
     &__name-title {
         font-size: 3rem;
@@ -28,6 +38,11 @@
         position: absolute;
         top: 60px;
         left: 435px;
+        @media only screen and (max-width: 450px) {
+            top: 25px;
+            left: 25px;
+            font-weight: 800;
+         }
     }
 
     &__about-text {
@@ -40,6 +55,13 @@
         top: 98px;
         left: 530px;
         width: 930px;
+        @media only screen and (max-width: 450px) {
+            backdrop-filter: none;
+            position:inherit;
+            left: 0px;
+            width: 95%;
+            top: 480px;
+        }
     }
     &__text {
         font-size: 1.85rem;
