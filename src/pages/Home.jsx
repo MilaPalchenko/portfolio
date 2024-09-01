@@ -1,10 +1,11 @@
 import Header from "../components/Header";
+import Nav from "../components/Nav";
 import ParallaxPage from "../components/ParallaxPage";
 
 export default function Home() {
 
     return (<>
-        <Header />
+        <Nav/>
         <main>
             <ParallaxPage />
         </main>

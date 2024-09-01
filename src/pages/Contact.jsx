@@ -9,11 +9,12 @@ import ContactLinks from '../components/ContactLinks';
 import Clouds from "../assets/contact-page/clouds-top.png"
 import Cat_meme from "../assets/contact-page/cat-meme.png"
 import HamburgerMenu from '../components/HamburgerMenu';
+import Nav from '../components/Nav';
 
 
 export default function Contact() {
     return (<>
-        <Header />
+        <Nav/>
 
         <img className='background'
             src={Clouds}

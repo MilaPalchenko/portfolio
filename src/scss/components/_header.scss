@@ -16,6 +16,8 @@ header {
     padding: 10px;
     border-bottom: 1px solid var(--accent-red);
 
+    z-index: 10000;
+
     .personal-name {
         font-size: 2.5rem;
         font-weight: bold;
@@ -27,6 +29,8 @@ header {
         flex-direction: row;
         list-style: none;
         margin-right: 30px;
+        
+        z-index: 10000;
 
 
         // add hamburger menu here
@@ -34,16 +38,40 @@ header {
          display: none;   
         }
 
+        &--item { 
+            color: white;
+            
+        }
+        &--title { 
+            padding: 10px 40px;
+            background-color: #000;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 50px;
+            width: 100%;
+        }
+       
+
         &--button {
             background: #000000;
             border: none;
             border-radius: 20px;
             color: var(--off-white);
             cursor: pointer;
-            font-size: 2.1rem;
+            font-size: 2.2rem;
             margin-right: 5px;
             padding: 5px 25px;
             transition: 0.7s ease;
+            font-family: var(--main-font);
+            font-weight: 500;
+            z-index: 15;
+             
+            @media screen and (max-width: 450px) {
+                width: 95vw;
+                padding: 15px;
+                margin: 10px;
+                font-size: 3rem;
+            }
         }
 
         &--button:hover { 
@@ -69,3 +97,4 @@ header {
         }
     }
 }
+

@@ -9,6 +9,7 @@ import ShortTextVers from '../components/ShortTextVers.jsx';
 import Projects from '../components/Projects.jsx';
 import WorkExp from '../components/WorkExp.jsx';
 import Education from '../components/Education.jsx'
+import Nav from '../components/Nav.jsx';
 
 // images
 import Clouds_background from '../assets/about-page/left-cloud-mid.png'
@@ -16,7 +17,7 @@ import Time_curve from '../assets/about-page/time-curve.png'
 
 export default function About() {
     return (<>
-        <Header />
+        <Nav />
         <ScrollToTop />
         <main>
             <div className="wrapper">

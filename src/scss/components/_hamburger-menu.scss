@@ -6,19 +6,34 @@
                                 starter. Instead it "reserves" some space
                                 w/o affecting the page formatting*/
     }
-   
-    body {
-        max-width: 40rem;
+   .green { 
+    background-color: green;
+   }
+ @keyframes hamSlider {
+    0% {
+        transform: translateX(90%);
     }
-    .test { 
-        background-color: blue;
+    25% {
+        transform: translateX(70%);
     }
+    50% {
+        transform: translateX(50%);
+    }
+    75% {
+        transform: translateX(30%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+ }
+
     .off-screen-menu {
         align-items: center;
-        background-color: var(--off-black);
+        background-color: var(--dark-grey);
         display: flex;
         flex-direction: column;
-        font-size: 3rem;
+        font-family: var(--main-font);
+        font-size: 4rem;
         justify-content: center;
         height: 105vh;
         padding-top: 15px;
@@ -27,31 +42,49 @@
         top: 0;
         touch-action: none;
         transition: .3s ease;
-        width: 90%;
+        width: 100%;
+
+        // animates appearance (just idea, no solution)
+        animation:  hamSlider 0.15s ease-in-out;
+        &__link { 
+            border-radius: 50px;
+            border: 2px solid var(--off-white);
+            margin: 20px 0;
+            background-color: var(--off-black);
+            padding: 10px;
+            width: 95%;
+
+            a { 
+                text-decoration: none;
+                
+            }
+            &--title { 
+                color: white;
+            }
+        }
         
     }
     .active { 
         right: 0;
     }
-    nav {
-        display: flex;
-        padding-left: 1rem;
-    }
+  
 
     #ham-menu-position {
         position: fixed;
         top: 0px;
         left: 0px;
+        z-index: 1000;
     }
 
     .ham-menu {
         height: 40px;
         margin-left: auto;
         position: fixed;
-        right: 18px;
-        top: 8px;
+        right: 15px;
+        top: 5px;
         width: 40px;
     }
+
 
     .ham-menu span {
         background-color: var(--off-white);
@@ -88,12 +121,22 @@
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
-    .nav-menu {
-        position: fixed;
-    }
-
-    .nav-list {
-        list-style: none;
-        margin-top: -100px;
-    }
 }
+
+.dropdown-wrapper {
+    position: relative;
+    width: 200px;
+  }
+  
+  .dropdown-wrapper .dropdown {
+    background: #fff;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-family: "Open Sans";
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+  }

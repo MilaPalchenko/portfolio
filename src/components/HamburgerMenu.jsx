@@ -1,15 +1,28 @@
 // styles
-import '../scss/components/_hamburger-menu.scss'
+import '../scss/components/_burger-menu.scss'
 
-export default function HamburgerMenu() { 
+import React from 'react';
+import { useState } from "react";
 
-    return(<div id="ham-menu-position">
-        <nav>
-            <div className="ham-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+const HamburgerMenu = () => {
+    const [isOpen, setIsOpen] = useState(true);
+
+    const setOpenState = () => {
+        let reverseOpened = isOpen;
+        setIsOpen(!reverseOpened);
+    }
+
+    return (
+        // !! fix weird test div !!
+        <div className="test">
+            <div className={isOpen ? 'menu-btn' : 'menu-btn-open'}
+                onClick={() => setOpenState()}>
+                <div className="menu-btn-burger">
+                    {/* lines here via ::before && ::after styles */}
+                </div>
             </div>
-        </nav>
-    </div>);
+        </div>
+    )
 }
+
+export default HamburgerMenu
