@@ -22,7 +22,7 @@ export default function Projects() {
                             <a className="project__link" target="_blank"
                                 href="https://to-do-list-react-test.netlify.app/">
                                 <img className="project__img-preview"
-                                    src={Todo_site} alt="recipe-site" />
+                                    src={Todo_site} alt="toDo list-site" />
                                 <h2 className="project__title">{"< Todo-List >"}</h2>
                             </a>
                         </div>
@@ -30,7 +30,7 @@ export default function Projects() {
                             <a className="project__link" target="_blank"
                                 href="https://random-quotes-mpal.netlify.app/">
                                 <img className="project__img-preview"
-                                    src={Quotes_site} alt="recipe-site" />
+                                    src={Quotes_site} alt="random quotes-site" />
                                 <h2 className="project__title">{"< Random Quotes >"}</h2>
                             </a>
                         </div>
@@ -38,7 +38,7 @@ export default function Projects() {
                             <a className="project__link" target="_blank"
                                 href="https://darina-photographer.netlify.app/">
                                 <img className="project__img-preview"
-                                    src={Business_card_site} alt="recipe-site" />
+                                    src={Business_card_site} alt="business card-site" />
                                 <h2 className="project__title">{"< Business Card Site >"}</h2>
                             </a>
                         </div>

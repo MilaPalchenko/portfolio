@@ -23,7 +23,7 @@ export default function About() {
             <div className="wrapper">
                 <article className="first-page">
                     <img className="clouds-background"
-                        src={Clouds_background} alt="" />
+                        src={Clouds_background} alt="clouds background" />
                     <div className="about-container">
                         <ExpandedText />
                         <ShortTextVers />
@@ -31,7 +31,7 @@ export default function About() {
                     <Projects />
                     <article className="second-page">
                         <WorkExp />
-                        <img src={Time_curve} alt="" className="time-curve" />
+                        <img src={Time_curve} alt="time curve" className="time-curve" />
                         <Education />
                     </article>
                 </article>

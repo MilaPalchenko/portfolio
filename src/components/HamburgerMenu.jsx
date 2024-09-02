@@ -13,8 +13,7 @@ const HamburgerMenu = () => {
     }
 
     return (
-        // !! fix weird test div !!
-        <div className="test">
+        <div className="menu-wrap">
             <div className={isOpen ? 'menu-btn' : 'menu-btn-open'}
                 onClick={() => setOpenState()}>
                 <div className="menu-btn-burger">

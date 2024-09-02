@@ -25,7 +25,7 @@ export default function Education() {
                 <p className="certificates__time-period">December 2022</p>
                 <p className="certificates__course">Responsive Web Design</p>
                 <a href="https://www.freecodecamp.org/certification/fccfd017023-bb6d-4f25-a126-987b16bee5d1/responsive-web-design" target="__blank">
-                    <img src={Freecodepen_certificate} alt="" className="certificates__img" />
+                    <img src={Freecodepen_certificate} alt="Freecodepen certificate" className="certificates__img" />
                 </a>
             </div>
             <div className="certificates">
@@ -33,7 +33,7 @@ export default function Education() {
                 <p className="certificates__time-period">October 2023</p>
                 <p className="certificates__course">Introducing to Coding</p>
                 <a href="https://www.shecodes.io/certificates/8576dbb0e2e51405b2b795b85087ec22" target="__blank">
-                    <img src={Shecodes_certificate} alt="" className="certificates__img" />
+                    <img src={Shecodes_certificate} alt="Shecodes certificate" className="certificates__img" />
                 </a>
             </div>
         </div>

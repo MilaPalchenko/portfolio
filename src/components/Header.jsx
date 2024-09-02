@@ -1,9 +1,7 @@
 // styles 
 import '../scss/components/_header.scss'
-import "../scss/components/_hamburger-menu.scss"
 
 import { Link } from "react-router-dom"
-import HamburgerMenu from './HamburgerMenu'
 import { useState } from 'react'
 
 
@@ -39,8 +37,7 @@ function Header() {
                         </Link>
                     </li>
                 </ul>
-            </nav>             
-              
+            </nav>                
         </header>
     </>)
 }

@@ -7,7 +7,7 @@ function NavLinks() {
      
 
     return (<>
-    
+        {/* fix class names */}
         <div className='main-nav__list--item'><Link to="/home">
         <button className="main-nav__list--button">Home</button>
             </Link></div>
