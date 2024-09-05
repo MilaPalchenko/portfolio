@@ -4,11 +4,11 @@
     top: 55px;
     z-index: -999;
     @media only screen and (max-width: 450px) {
-     height: 700px; 
-     object-fit: cover;
-     left: 0;
-     top: 0;
-     width: 100%;
+        height: 700px;
+        object-fit: cover;
+        left: 0;
+        top: 0;
+        width: 100%;
     }
 }
 
@@ -21,8 +21,17 @@
     width: 100vw;
     .contacts {
         width: 100vw;
-
-        &__hire-text { 
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            @media only screen and (max-width: 450px) {
+                margin-top: 0;
+                align-items:baseline;
+            }
+        }
+        &__hire-text {
             font-size: 2.5rem;
             margin-top: -240px;
             text-align: center;
@@ -30,15 +39,46 @@
                 margin-top: -110px;
             }
         }
-        .cat-meme { 
-            position: fixed;
-            bottom: 0;
-            right:0;
-            @media only screen and (max-width: 450px) {
-            width: 200px;
+
+        &__work-types {
+            font-family: var(--main-font);
+            font-size: 2.5rem;
+            font-weight: 500;
+            text-align: center;
+            &--title {
+                font-weight: 500;
+                font-size: 2.5rem;
+                text-align: center;
+                margin: 20px;
+                margin-bottom: 5px;
+                z-index: 10;
+                @media only screen and (max-width: 450px) {
+                    font-size: 2rem;
+                    margin: 5px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                }
+            }
+            &--item {
+                margin-left: -90px;
+                font-size: 2.2rem;
+                padding: 3px;
+                text-align: left;
+                @media only screen and (max-width: 450px) {
+                    margin-left: 23px;
+                    font-size: 1.7rem;
+                }
             }
         }
-        .cat-meme-text { 
+        .cat-meme {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            @media only screen and (max-width: 450px) {
+                width: 200px;
+            }
+        }
+        .cat-meme-text {
             font-size: 2rem;
             position: fixed;
             bottom: 40px;
