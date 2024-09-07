@@ -6,37 +6,52 @@
     @media only screen and (max-width: 450px) {
         height: 700px;
         object-fit: cover;
+        position: fixed;
         left: 0;
         top: 0;
         width: 100%;
     }
 }
 
+
+
 .container {
     align-items: center;
     display: flex;
     font-family: var(--main-font);
     justify-content: center;
+    height: 100%;
     margin-top: 55px;
     width: 100vw;
     .contacts {
+        height: 100%;
         width: 100vw;
-        .wrap {
+        &__wrap {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 40px;
+
             @media only screen and (max-width: 450px) {
                 margin-top: 0;
                 align-items:baseline;
+                position: fixed;
             }
         }
         &__hire-text {
             font-size: 2.5rem;
             margin-top: -240px;
             text-align: center;
+
             @media only screen and (max-width: 450px) {
-                margin-top: -110px;
+                position: fixed;
+                top: 430px;
+                width: 280px;
+                left: 100px;
+                color: var(--off-white);
+                font-weight: 400;
+                font-size: 2.1rem;
+                text-align: left;
             }
         }
 
@@ -45,6 +60,19 @@
             font-size: 2.5rem;
             font-weight: 500;
             text-align: center;
+            @media only screen and (max-width: 450px) {
+               position: fixed;
+               top: 310px;
+               left: 100px;
+               background-color:rgba(255, 255, 255, 0.075);
+               padding: 20px;
+               backdrop-filter: blur(10px);
+               -webkit-backdrop-filter: blur(10px);
+               width: 100%;
+               border-left: 2px solid black;
+               border-bottom: 2px solid black;
+            }
+         
             &--title {
                 font-weight: 500;
                 font-size: 2.5rem;
@@ -57,6 +85,18 @@
                     margin: 5px;
                     margin-top: 10px;
                     margin-left: 20px;
+                    position: fixed;
+                    top: 265px;
+                    left: 80px;
+                    background-color:rgba(255, 255, 255, 0.075);
+                    width: 100%;
+                    text-align: left;
+                    padding: 5px;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    border-top: 2px solid black;
+                    border-left: 2px solid black;
+                    border-bottom: 1px solid var(--accent-red);
                 }
             }
             &--item {
@@ -67,6 +107,7 @@
                 @media only screen and (max-width: 450px) {
                     margin-left: 23px;
                     font-size: 1.7rem;
+                    
                 }
             }
         }
@@ -76,6 +117,7 @@
             right: 0;
             @media only screen and (max-width: 450px) {
                 width: 200px;
+                z-index: -2;
             }
         }
         .cat-meme-text {

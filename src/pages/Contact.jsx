@@ -14,8 +14,7 @@ import Nav from '../components/Nav';
 
 export default function Contact() {
     return (<>
-        <Nav/>
-
+        <Nav />
         <img className='background'
             src={Clouds}
             alt="clouds-background" />
@@ -24,15 +23,15 @@ export default function Contact() {
             <div className="contacts">
                 <ContactLinks />
                 <h1 className='contacts__hire-text'>Currently open for job offers. Feel free to contact me.</h1>
-                <div className="contacts wrap">
-                <span className='contacts__work-types--title'>Prefered work types:</span>
-                    <ul className="contacts__work-types"> 
-                        
-                    <li className="contacts__work-types--item">Hybrid</li>
-                    <li className="contacts__work-types--item">Office</li>
-                    <li className="contacts__work-types--item">Remote</li>
-                </ul></div>
-                
+                <div className="contacts contacts__wrap">
+                    <span className='contacts__work-types--title'>Prefered work types:</span>
+                    <ul className="contacts__work-types">
+                        <li className="contacts__work-types--item">Hybrid</li>
+                        <li className="contacts__work-types--item">Office</li>
+                        <li className="contacts__work-types--item">Remote</li>
+                    </ul>
+                </div>
+
                 <img src={Cat_meme} alt="" className="cat-meme" />
                 <h2 className="cat-meme-text">Please contact me and let me work for you</h2>
             </div>
