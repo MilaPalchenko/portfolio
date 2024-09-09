@@ -36,10 +36,10 @@
         @media only screen and (max-width: 450px) {
             position: fixed;
             top: 230px;
-            left: 10px;
+            width: 100%;
             flex-direction: row;   
-            
-            align-items: baseline;
+        
+            justify-content: center;
             margin-top: -60px;
             height: 80px;
         }
