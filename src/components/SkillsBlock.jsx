@@ -6,23 +6,23 @@ export default function SkillsBlock() {
         <div className="skill-box">
             <h2 className="skill-box__title underline-animation">Soft skills:</h2>
 
-            <div className="skill-box__block">
+            <div className="skill-box__block--soft">
                 <button className="skill-box__block--btn">Dedicated</button>
                 <button className="skill-box__block--btn">Commited</button>
                 <button className="skill-box__block--btn">Hardworking</button>
                 <button className="skill-box__block--btn">Communicative</button>
                 <button className="skill-box__block--btn">Adaptive</button>
                 <button className="skill-box__block--btn">Open-minded</button>
-                <button className="skill-box__block--btn">Text box</button>
-                <button className="skill-box__block--btn">Longer Text box</button>
-                <button className="skill-box__block--btn">More Text box</button>
+                <button className="skill-box__block--btn">Curious</button>
+                <button className="skill-box__block--btn">Organizational</button>
+                <button className="skill-box__block--btn">Attention to detail</button>
             </div>
         </div>
 
         <div className="skill-box">
             <h2 className="skill-box__title underline-animation">Tech skills:</h2>
 
-            <div className="skill-box__block">
+            <div className="skill-box__block--tech">
                 <button className="skill-box__block--btn">React</button>
                 <button className="skill-box__block--btn">JavaScript</button>
                 <button className="skill-box__block--btn">SASS</button>

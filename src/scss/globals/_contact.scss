@@ -45,13 +45,25 @@
 
             @media only screen and (max-width: 450px) {
                 position: fixed;
-                top: 430px;
-                width: 280px;
-                left: 100px;
-                color: var(--off-white);
+                top: 670px;
+                width: 300px;
+                left: 0px;
+                color: var(--black);
                 font-weight: 400;
-                font-size: 2.1rem;
+                font-size: 2rem;
                 text-align: left;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                    border-top: 2px solid black;
+                    border-right: 2px solid black;
+                    border-bottom: 2px solid var(--black);
+                    padding: 15px 0 15px 15px;
+                    margin-right: 20px;
+                    z-index: 1;
+                    background-color:rgba(255, 255, 255, 0.075);
+            
+               backdrop-filter: blur(10px);
+               -webkit-backdrop-filter: blur(10px);
             }
         }
 
@@ -62,13 +74,15 @@
             text-align: center;
             @media only screen and (max-width: 450px) {
                position: fixed;
-               top: 310px;
+               top: 290px;
                left: 100px;
+               color: var(--black);
                background-color:rgba(255, 255, 255, 0.075);
                padding: 20px;
                backdrop-filter: blur(10px);
                -webkit-backdrop-filter: blur(10px);
                width: 100%;
+               border-bottom-left-radius: 10px;
                border-left: 2px solid black;
                border-bottom: 2px solid black;
             }
@@ -82,11 +96,12 @@
                 z-index: 10;
                 @media only screen and (max-width: 450px) {
                     font-size: 2rem;
+                    color: var(--black);
                     margin: 5px;
                     margin-top: 10px;
                     margin-left: 20px;
                     position: fixed;
-                    top: 265px;
+                    top: 245px;
                     left: 80px;
                     background-color:rgba(255, 255, 255, 0.075);
                     width: 100%;
@@ -94,9 +109,10 @@
                     padding: 5px;
                     backdrop-filter: blur(10px);
                     -webkit-backdrop-filter: blur(10px);
+                    border-top-left-radius: 10px;
                     border-top: 2px solid black;
                     border-left: 2px solid black;
-                    border-bottom: 1px solid var(--accent-red);
+                    border-bottom: 1px solid var(--black);
                 }
             }
             &--item {

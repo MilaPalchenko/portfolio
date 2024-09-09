@@ -2,13 +2,11 @@
 import '../scss/globals/_contact.scss'
 
 // components
-import Header from "../components/Header";
 import ContactLinks from '../components/ContactLinks';
 
 // images
 import Clouds from "../assets/contact-page/clouds-top.png"
 import Cat_meme from "../assets/contact-page/cat-meme.png"
-import HamburgerMenu from '../components/HamburgerMenu';
 import Nav from '../components/Nav';
 
 

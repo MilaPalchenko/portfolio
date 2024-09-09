@@ -1,49 +1,59 @@
-
-
-.skill-box-wrapper { 
+.skill-box-wrapper {
     background-color: var(--dark-grey);
     border-top: 2px solid var(--accent-red);
     display: flex;
     flex-direction: row;
     gap: 100px;
-    height: 70vh;
+    height: 100vh;
     justify-content: center;
     position: fixed;
     top: 300px;
-    width: 100vw; 
+    width: 100vw;
     @media only screen and (max-width: 450px) {
-     flex-direction: row;     
-     height: 100vh;  
-     gap: 10px;
-     margin: auto;
-     top: 250px;
+        flex-direction: row;
+        height: 100vh;
+        gap: 10px;
+        margin: auto;
+        top: 250px;
     }
 }
 
-.skill-box { 
+.skill-box {
     display: flex;
     flex-direction: column;
     font-family: var(--main-font);
     margin-top: 50px;
     width: 600px;
     @media only screen and (max-width: 450px) {
-     width: 90%;       
+        width: 100%;
     }
-  
-    &__title { 
+
+    &__title {
         color: var(--white);
         font-size: 3.5rem;
         margin-bottom: 30px;
         text-align: center;
         text-shadow: 2px 2px var(--skill-box-title-shadow);
         @media only screen and (max-width: 450px) {
-         font-size: 2rem;   
+            font-size: 2rem;
         }
     }
 
-    &__block { 
-       text-align: center;
-        &--btn { 
+    &__block {
+        text-align: center;
+
+        &--soft {
+            @media only screen and (max-width: 450px) {
+                text-align: left;
+            }
+        }
+        &--tech {
+            @media only screen and (max-width: 450px) {
+                text-align: right;
+            }
+        }
+
+        &--btn {
             background: var(--black);
             border: none;
             border-radius: 25px;
@@ -55,6 +65,7 @@
             padding: 10px 25px;
             @media only screen and (max-width: 450px) {
                 font-size: 1.5rem;
+                padding: 5px 20px;
             }
         }
     }

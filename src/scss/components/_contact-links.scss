@@ -32,21 +32,22 @@
         height: 80vh;
         justify-content: center;
         margin-top: -80px;
+        z-index: 1;
         @media only screen and (max-width: 450px) {
             position: fixed;
-            top: 250px;
+            top: 230px;
             left: 10px;
-            flex-direction: column;   
+            flex-direction: row;   
             
             align-items: baseline;
             margin-top: -60px;
-            height: 400px;
+            height: 80px;
         }
         &--img { 
             height: 94px;
             margin: 0 36px;
             @media only screen and (max-width: 450px) {
-                height: 65px;
+                height: 55px;
                 margin: 10px;
             }
             

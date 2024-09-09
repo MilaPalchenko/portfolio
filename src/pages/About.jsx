@@ -2,14 +2,13 @@
 import '../scss/globals/_about.scss'
 
 // components
-import Header from "../components/Header.jsx";
+import Nav from '../components/Nav.jsx';
 import ScrollToTop from "../components/ScrollToTop.jsx";
 import ExpandedText from '../components/ExpandedText.jsx';
 import ShortTextVers from '../components/ShortTextVers.jsx';
 import Projects from '../components/Projects.jsx';
 import WorkExp from '../components/WorkExp.jsx';
 import Education from '../components/Education.jsx'
-import Nav from '../components/Nav.jsx';
 
 // images
 import Clouds_background from '../assets/about-page/left-cloud-mid.png'
