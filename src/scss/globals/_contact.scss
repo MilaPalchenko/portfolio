@@ -1,25 +1,26 @@
 .background {
-    left: -150px;
     position: absolute;
     top: 55px;
+    left: -150px;
+    
     z-index: -999;
     @media only screen and (max-width: 450px) {
-        height: 700px;
-        object-fit: cover;
         position: fixed;
         left: 0;
         top: 0;
+
+        height: 700px;
+        object-fit: cover;
         width: 100%;
     }
 }
 
-
-
 .container {
     align-items: center;
     display: flex;
-    font-family: var(--main-font);
     justify-content: center;
+
+    font-family: var(--main-font);
     height: 100%;
     margin-top: 55px;
     width: 100vw;
@@ -27,15 +28,17 @@
         height: 100%;
         width: 100vw;
         &__wrap {
+            align-items: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
+
             margin-top: 40px;
 
             @media only screen and (max-width: 450px) {
-                margin-top: 0;
-                align-items:baseline;
                 position: fixed;
+
+                align-items: baseline;
+                margin-top: 0;
             }
         }
         &__hire-text {
@@ -46,24 +49,24 @@
             @media only screen and (max-width: 450px) {
                 position: fixed;
                 top: 670px;
-                width: 300px;
                 left: 0px;
+                width: 300px;
+
                 color: var(--black);
-                font-weight: 400;
-                font-size: 2rem;
-                text-align: left;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                background-color: var(--transparent-background);
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
-                    border-top: 2px solid black;
-                    border-right: 2px solid black;
-                    border-bottom: 2px solid var(--black);
-                    padding: 15px 0 15px 15px;
-                    margin-right: 20px;
-                    z-index: 1;
-                    background-color:rgba(255, 255, 255, 0.075);
-            
-               backdrop-filter: blur(10px);
-               -webkit-backdrop-filter: blur(10px);
+                border-top: 2px solid var(--black);
+                border-right: 2px solid var(--black);
+                border-bottom: 2px solid var(--black);
+                font-size: 2rem;
+                font-weight: 400;
+                text-align: left;
+                margin-right: 20px;
+                padding: 15px 0 15px 15px;
+                z-index: 1;
             }
         }
 
@@ -73,74 +76,76 @@
             font-weight: 500;
             text-align: center;
             @media only screen and (max-width: 450px) {
-               position: fixed;
-               top: 290px;
-               left: 100px;
-               color: var(--black);
-               background-color:rgba(255, 255, 255, 0.075);
-               padding: 20px;
-               backdrop-filter: blur(10px);
-               -webkit-backdrop-filter: blur(10px);
-               width: 100%;
-               border-bottom-left-radius: 10px;
-               border-left: 2px solid black;
-               border-bottom: 2px solid black;
+                position: fixed;
+                top: 290px;
+                left: 100px;
+
+                color: var(--black);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                background-color: var(--transparent-background);
+                border-bottom-left-radius: 10px;
+                border-left: 2px solid var(--black);
+                border-bottom: 2px solid var(--black);
+                padding: 20px;
+                width: 100%;
             }
-         
+
             &--title {
-                font-weight: 500;
-                font-size: 2.5rem;
                 text-align: center;
+                font-size: 2.5rem;
+                font-weight: 500;
                 margin: 20px;
                 margin-bottom: 5px;
                 z-index: 10;
                 @media only screen and (max-width: 450px) {
-                    font-size: 2rem;
-                    color: var(--black);
-                    margin: 5px;
-                    margin-top: 10px;
-                    margin-left: 20px;
                     position: fixed;
                     top: 245px;
                     left: 80px;
-                    background-color:rgba(255, 255, 255, 0.075);
-                    width: 100%;
-                    text-align: left;
-                    padding: 5px;
+                    
                     backdrop-filter: blur(10px);
                     -webkit-backdrop-filter: blur(10px);
+                    background-color: var(--transparent-background);
                     border-top-left-radius: 10px;
-                    border-top: 2px solid black;
-                    border-left: 2px solid black;
+                    border-top: 2px solid var(--black);
                     border-bottom: 1px solid var(--black);
+                    border-left: 2px solid var(--black);
+                    color: var(--black);
+                    font-size: 2rem;
+                    margin: 5px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    padding: 5px;
+                    text-align: left;
+                    width: 100%;
                 }
             }
             &--item {
-                margin-left: -90px;
                 font-size: 2.2rem;
+                margin-left: -90px;
                 padding: 3px;
                 text-align: left;
                 @media only screen and (max-width: 450px) {
-                    margin-left: 23px;
                     font-size: 1.7rem;
-                    
+                    margin-left: 23px;
                 }
             }
         }
         .cat-meme {
             position: fixed;
-            bottom: 0;
             right: 0;
+            bottom: 0;
             @media only screen and (max-width: 450px) {
                 width: 200px;
                 z-index: -2;
             }
         }
         .cat-meme-text {
-            font-size: 2rem;
             position: fixed;
-            bottom: 40px;
             right: 30px;
+            bottom: 40px;
+
+            font-size: 2rem;
             @media only screen and (max-width: 450px) {
                 font-size: 1.7rem;
             }

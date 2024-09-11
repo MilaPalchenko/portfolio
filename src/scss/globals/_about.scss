@@ -11,64 +11,86 @@ section {
 }
 
 .wrapper {
-    align-items: center;
     display: flex;
-    font-size: 1.5rem;
+    align-items: center;
     justify-content: center;
+    
 
-    @media only screen and (max-width: 450px) {
-        flex-direction: column;  
+    font-size: 1.5rem;
+    @media (min-width: 451px) and (max-width: 1700px) { 
+        align-items: baseline;
     }
+    @media only screen and (max-width: 450px) {
+        flex-direction: column;
+    }
+
     .first-page {
         height: 100vh;
+        
+        @media (min-width: 451px) and (max-width: 1700px) {
+            flex-direction: column;
+        }
     }
 
     .clouds-background {
         position: absolute;
         top: 140px;
+
         z-index: -1000;
         @media only screen and (max-width: 450px) {
             display: none;
         }
     }
-
+ 
     .about-container {
-        font-family: var(--main-font);
         display: flex;
         flex-direction: row;
-        /* margin-top to "fix" navbar not taking needed space as before
-        due to changing it from sticky to fixed position
-        and being lazy to rework all thing for now */
-        margin-top: 56px;
+        justify-content: center;
+    
+        position: relative;
+    
+        font-family: var(--main-font);
+      
         @media only screen and (max-width: 450px) {
-           flex-direction: column;
+            flex-direction: column;
+        }
+        @media (min-width: 451px) and (max-width: 1700px) {
+            flex-direction: column;
+            justify-content: flex-start;
         }
     }
 
     // second page
-    .second-page { 
+    .second-page {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        
         font-family: var(--main-font);
         font-size: 3rem;
-        justify-content: center;
         margin-top: 50px;
         @media only screen and (max-width: 450px) {
-       flex-direction: column;
-       max-width: 400px;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        @media (min-width: 451px) and (max-width: 1700px) {
+            flex-direction: row;
+            gap: 50px;
         }
     }
-    
-    .time-curve { 
-        width: 381px;
+
+    .time-curve {
         height: 747px;
         margin-top: 47px;
         margin-right: 10px;
+        width: 381px;
         @media only screen and (max-width: 450px) {
             display: none;
         }
+        @media (min-width: 451px) and (max-width: 1700px) {
+            display: none;
+        }
     }
-    
 }
 
 @keyframes movetext {

@@ -1,13 +1,15 @@
 .skill-box-wrapper {
-    background-color: var(--dark-grey);
-    border-top: 2px solid var(--accent-red);
+    position: fixed;
+    top: 300px;
+
     display: flex;
     flex-direction: row;
     gap: 100px;
-    height: 100vh;
     justify-content: center;
-    position: fixed;
-    top: 300px;
+
+    background-color: var(--dark-grey);
+    border-top: 2px solid var(--accent-red);
+    height: 100vh;
     width: 100vw;
     @media only screen and (max-width: 450px) {
         flex-direction: row;
@@ -21,6 +23,7 @@
 .skill-box {
     display: flex;
     flex-direction: column;
+    
     font-family: var(--main-font);
     margin-top: 50px;
     width: 600px;
@@ -40,14 +43,14 @@
     }
 
     &__block {
-        text-align: center;
-
         &--soft {
+            text-align: center;
             @media only screen and (max-width: 450px) {
                 text-align: left;
             }
         }
         &--tech {
+            text-align: center;
             @media only screen and (max-width: 450px) {
                 text-align: right;
             }

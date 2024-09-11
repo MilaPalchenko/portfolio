@@ -3,36 +3,54 @@
         position: absolute;
         top: 115px;
         right: 40px;
-        width: 370px;
-        height: 630px;
+
         border-radius: 15px;
+        height: 630px;
+        width: 370px;
 
         @media only screen and (max-width: 450px) {
-         position: relative;  
-         top: -40px;
-         right: 0px;
-         margin: auto;
-         margin-bottom: 10px;
+            position: relative;
+            top: -40px;
+            right: 0px;
+
+            margin: auto;
+            margin-bottom: 10px;
         }
         @media only screen and (max-width: 415px) {
-           top: -10px;
-           margin-bottom: 50px;
+            top: -10px;
+
+            margin-bottom: 50px;
         }
+
+        @media (min-width: 451px) and (max-width: 1700px) { 
+            position: relative;
+            left: -410px;
+
+            margin-top: 10px;
+        }
+    
 
         &__wrap {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            position: absolute;
-            top: 40px;
-            width: 370px;
-            height: 630px;
+
+            position: inherit;
+            top: -18px;
+
             background-color: var(--about-wrap-background);
             border-radius: 15px;
+            height: 590px;
+            width: 37rem;
         }
         &--title {
+            position: relative;
+            top: -50px;
+            
             font-size: 3rem;
             text-align: center;
+            @media (min-width: 451px) and (max-width: 1700px) {
+                top: -15px;
+            }
         }
         &--text {
             font-size: 1.8rem;
@@ -45,21 +63,21 @@
         }
 
         .list {
-            padding-left: 20px;
             font-size: 1.7rem;
             margin: 5px 10px 5px 10px;
+            padding-left: 20px;
             &--nested-title {
                 margin-left: -6px;
             }
             &--title {
+                list-style: circle;
                 padding: 5px;
                 margin-left: 15px;
-                list-style: circle;
             }
             &--item {
+                list-style: "—";
                 margin-left: 30px;
                 padding-left: 5px;
-                list-style: "—";
             }
             a {
                 color: var(--link-color);

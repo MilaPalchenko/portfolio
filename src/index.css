@@ -31,6 +31,9 @@
     /* about page colors */
     --about-wrap-background: #ededed;
     --about-text-background: #ffffff80;
+
+    /* contact page */
+    --transparent-background: #ffffff13; 
 }
 
 *, :before, :after { 

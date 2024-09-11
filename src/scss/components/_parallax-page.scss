@@ -26,14 +26,15 @@ html {
 }
 
 #title {
+    position: absolute;
+    top: 200px;
+    left: 40%;
+
     color: var(--white);
     font-family: var(--secondary-font);
     font-size: 4rem;
     height: 100vh;
-    left: 40%;
-    position: absolute;
     text-shadow: 2px 2px 2px var(--text-shadow);
-    top: 200px;
     white-space: nowrap;
     width: 100%;
     z-index: 12;
@@ -50,26 +51,24 @@ html {
 }
 
 .wrap-section {
-    height: 100vh;
-    position: relative;
-}
-
-section {
     display: flex;
-    height: 100vh;
     justify-content: center;
+
+    position: relative;
+
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
-    position: relative;
     width: 100%;
 
     img {
-        height: 100%;
-        left: 0;
-        object-fit: cover;
-        pointer-events: none;
         position: absolute;
         top: 0;
+        left: 0;
+
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
         width: 100%;
     }
 }
@@ -89,12 +88,13 @@ section {
 }
 
 .intro-info {
-    align-content: center;
-    background: var(--intro-gradient);
     display: grid;
+    align-content: center;
+    place-items: center;
+
+    background: var(--intro-gradient);
     font-family: var(--main-font);
     font-size: 3rem;
     min-height: 100vh;
-    place-items: center;
 }
 

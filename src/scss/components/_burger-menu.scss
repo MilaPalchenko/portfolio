@@ -1,19 +1,20 @@
 @media screen and (max-width: 450px) {
     .menu-wrap {
         position: absolute;
-        right: 12px;
         top: 10px;
+        right: 12px;
     }
     .menu-btn,
     .menu-btn-open {
-        align-items: center;
         display: flex;
+        align-items: center;
         justify-content: center;
+
+        position: relative;
+        top: 0px;
 
         cursor: pointer;
         height: 30px;
-        position: relative;
-        top: 0px;
         transition: all 0.3s ease-in-out;
         width: 40px;
         z-index: 1000;
@@ -28,16 +29,17 @@
 
         &::before,
         &::after {
+            position: absolute;
+            right: 0;
+            left: 0;
+            
             background: var(--white);
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
             content: "";
             height: 5px;
-            left: 0;
             margin-left: auto;
             margin-right: auto;
-            position: absolute;
-            right: 0;
             transition: all 0.4s ease-in-out;
             width: 40px;
         }

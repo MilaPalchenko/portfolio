@@ -1,14 +1,15 @@
 .contacts {
     &__header {
+        position: relative;
+        top: 165px;
+
         backdrop-filter: blur(10px);
         background-color: var(--header-background);
         border-top: 2px solid var(--black);
         border-bottom: 2px solid var(--black);
         font-size: 3rem;
         padding: 5px;
-        position: relative;
         text-align: center;
-        top: 165px;
         width: 100vw;
         @media only screen and (max-width: 450px) {
             position: fixed;
@@ -17,31 +18,34 @@
         }
     }
     &__titles-grouped { 
-        background-color: var(--white);
         display: flex;
         flex-direction: row;
         justify-content: center;
+
+        background-color: var(--white);
         width: 100vw;
     }
     &__title { 
         margin: 0 15px;
     }
     &__items { 
-        align-items: center;
         display: flex;
-        height: 80vh;
+        align-items: center;
         justify-content: center;
+
+        height: 80vh;
         margin-top: -80px;
         z-index: 1;
         @media only screen and (max-width: 450px) {
             position: fixed;
             top: 230px;
             width: 100%;
+
             flex-direction: row;   
-        
             justify-content: center;
-            margin-top: -60px;
+
             height: 80px;
+            margin-top: -60px;
         }
         &--img { 
             height: 94px;

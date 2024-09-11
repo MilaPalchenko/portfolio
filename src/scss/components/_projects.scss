@@ -6,29 +6,36 @@
     @media only screen and (max-width: 450px) {
            display: grid;
     }
+    @media (min-width: 451px) and (max-width: 1700px) { 
+            display: grid;
+            grid-template-columns: 360px 360px;
+            justify-content: center;
+            margin-top: -300px;
+            margin-right: -350px;
+    }
 
     .project {
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(10px);
         border-radius: 15px;
-        font-family: var(--main-font);
         border: 2px solid var(--link-color);
         cursor: pointer;
+        font-family: var(--main-font);
      
         &__img-preview {
-            width: 356px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             border-bottom: 2px solid var(--link-color);
             object-fit: cover;
             height: 190px;
+            width: 356px;
         }
         &__title {
+            color: var(--link-color);
+            font-weight: 400;
             margin: 15px;
             padding-bottom:5px;
-            color: var(--link-color);
             transition: 0.5s ease;
-            font-weight: 400;
             &:hover {
                 animation: movetext 3s ease-in-out infinite;
                 color: var(--accent-orange);
