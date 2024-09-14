@@ -10,7 +10,7 @@
     @media only screen and (max-width: 450px) {
             display: grid;
     }
-    @media (min-width: 451px) and (max-width: 1700px) { 
+    @media (min-width: 451px) and (max-width: 1850px) { 
         display: grid;
         align-items: center;
         justify-content: center;
@@ -38,7 +38,7 @@
             margin: 75px 10px 10px 20px;
             width: 90%;
         }
-        @media (min-width: 451px) and (max-width: 1700px) { 
+        @media (min-width: 451px) and (max-width: 1850px) { 
             position: relative;
             height: 98%;
         }
@@ -78,16 +78,17 @@
             backdrop-filter: none;
             width: 95%;
         }
-        @media (min-width: 451px) and (max-width: 1700px) { 
+        @media (min-width: 451px) and (max-width: 1850px) { 
             height: 60%;
             overflow-y: scroll;
             width: 50%;
         }
     }
     &__text {
+        position: relative;
+        
         font-size: 1.85rem;
         margin-top: 2.5rem;
-        position: relative;
         text-align: justify;
     }
 }

@@ -4,6 +4,9 @@
         margin: 5px;
         width: 95%;   
     }
+    @media (min-width: 451px) and (max-width: 1700px) { 
+              width: 450px;  
+    }
 
     &__title { 
         margin-bottom: 10px;
