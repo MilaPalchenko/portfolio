@@ -6,7 +6,7 @@ export default function ShortTextVers() {
         <section className="about-container__short-version">
             <h1 className="about-container__short-version--title">Short Version:</h1>
             <aside className="about-container__short-version__wrap">
-                <p className="about-container__short-version--text">27y.o. Kyiv.</p>
+                <p className="about-container__short-version--text">28y.o. Kyiv.</p>
                 <h1 className="about-container__short-version--text-title">Learned:</h1>
                 <ul className="list">
                     <ul className="list--title">
@@ -26,6 +26,12 @@ export default function ShortTextVers() {
                 <h1 className="about-container__short-version--text-title">Project Links:</h1>
                 <ul className="list">
                     <li className="list--item">
+                        <a href="https://beauty-zone-bc.netlify.app/"
+                            target="_blank">
+                            Beauty-zone Business Card Site
+                        </a>
+                    </li>
+                    <li className="list--item">
                         <a href="https://recipe-site-mpal.netlify.app"
                             target="_blank">
                             Recipe Site
@@ -40,8 +46,7 @@ export default function ShortTextVers() {
                     <li className="list--item">
                         <a href="https://darina-photographer.netlify.app"
                             target="_blank">
-                            Business Card Site
-
+                            Photographer Business Card Site
                         </a>
                     </li>
                     <li className="list--item">
@@ -60,11 +65,6 @@ export default function ShortTextVers() {
                         <a href="https://weather-app-any-city.netlify.app"
                             target="_blank">
                             Weather Site
-                        </a>
-                    </li>
-                    <li className="list--item">
-                        <a href="https://codepen.io/milapiu"
-                            target="_blank">CodePen Gallery
                         </a>
                     </li>
                 </ul>

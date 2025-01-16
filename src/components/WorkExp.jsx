@@ -8,6 +8,31 @@ export default function WorkExp() {
                 Work Experience
             </h1>
             <div className="job">
+                <h1 className="job__title">Front-end Pet-projects <span className="job__place">Self-employed</span></h1>
+                <p className="job__time-period">April 2024 - Current time; October 2023; December 2022 <span className="job__separator">|</span> Ukraine, Kyiv</p>
+                <ul className="job__skills">
+                    <li className="job__skill">
+                        Created and built responsible web-pages.
+                    </li>
+                    <li className="job__skill">
+                        Learned mobile-first and desktop-first strategies.
+                    </li>
+                    <li className="job__skill">
+                        Worked with API databases.
+                    </li>
+                    <li className="job__skill">
+                        Learned basics of the React.
+                    </li>
+                    <li className="job__skill">
+                        Made business-card sites followed the layouts given by designers and from scratch by myself.
+                    </li>
+                    <li className="job__skill">
+                        Gained experience in version control by working with GitHub.
+                    </li>
+                </ul>
+            </div>
+
+            <div className="job">
                 <h1 className="job__title">Nail technician <span className="job__place">Self-employed</span></h1>
                 <p className="job__time-period">March 2019 - Current time; March 2016 - May 2018 <span className="job__separator">|</span> Ukraine, Kyiv</p>
                 <ul className="job__skills">

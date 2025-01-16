@@ -6,6 +6,7 @@ import Recipe_site from '../assets/about-page/site-preview/recipe-preview.png'
 import Todo_site from '../assets/about-page/site-preview/todo-preview.png'
 import Quotes_site from '../assets/about-page/site-preview/quotes-preview.png'
 import Business_card_site from '../assets/about-page/site-preview/business-card-preview.png'
+import Beauty_zone_card_site from "../assets/about-page/site-preview/beauty-zone-preview.png"
 
 export default function Projects() { 
     return(
@@ -30,8 +31,8 @@ export default function Projects() {
                             <a className="project__link" target="_blank"
                                 href="https://random-quotes-mpal.netlify.app/">
                                 <img className="project__img-preview"
-                                    src={Quotes_site} alt="random quotes-site" />
-                                <h2 className="project__title">{"< Random Quotes >"}</h2>
+                                    src={Beauty_zone_card_site} alt="random quotes-site" />
+                                <h2 className="project__title">{"< Beauty Zone >"}</h2>
                             </a>
                         </div>
                         <div className="project">
