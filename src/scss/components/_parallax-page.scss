@@ -48,7 +48,10 @@ html {
         left: 10%;     
         font-size: 3.5rem;  
     }
-    @media (min-width: 451px) and (min-height: 900px) { 
+    @media (min-width: 451px) and (max-height: 918px) { 
+        top: 215px;
+    }
+    @media (min-width: 451px) and (min-height: 920px) { 
         top: 235px;
     }
 }

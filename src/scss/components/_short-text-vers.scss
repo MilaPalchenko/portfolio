@@ -28,6 +28,12 @@
 
             margin-top: -80px;
         }
+        @media (min-width: 451px) and (max-width: 1850px) and (min-height: 920px){ 
+            position: relative;
+            left: -410px;
+
+            margin-top: -165px;
+        }
     
 
         &__wrap {
@@ -41,6 +47,14 @@
             border-radius: 15px;
             height: 590px;
             width: 37rem;
+
+            @media only screen and (max-width: 451px) {
+                height: 630px;
+            }
+
+            @media (min-width: 451px) and (max-width: 1850px) { 
+                top: 75px;
+            }
         }
         &--title {
             position: relative;
@@ -49,7 +63,7 @@
             font-size: 3rem;
             text-align: center;
             @media (min-width: 451px) and (max-width: 1850px) { 
-                top: -15px;
+                top: 70px;
             }
         }
         &--text {
