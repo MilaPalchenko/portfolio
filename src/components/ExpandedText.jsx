@@ -11,7 +11,7 @@ export default function ExpandedText() {
             <img className="about-container__profile-img" src={Profile_picture} />
             <h1 className="about-container__name-title">Hi, I'm Liudmyla! </h1>
             <article className="about-container__about-text">
-                <p className="about-container__text"> 28 years old. Based in Kyiv. </p>
+                <p className="about-container__text"> 29 years old. Based in Kyiv. </p>
 
                 <p className="about-container__text">Curious personality. Knows how to google. Cat person. Into aesthetics.
                     Learned English by binge-watching TV-shows. And passionate about things I like.

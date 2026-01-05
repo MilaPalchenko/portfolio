@@ -7,6 +7,27 @@ export default function WorkExp() {
             <h1 className="work-experience__title">
                 Work Experience
             </h1>
+            
+              <div className="job">
+                <h1 className="job__title">Trainee <span className="job__place">Fernir</span></h1>
+                <p className="job__time-period">March 2025 - July 2025; <span className="job__separator">|</span> Ukraine, Kyiv</p>
+                <ul className="job__skills">
+                    <li className="job__skill">
+                        Learned to create ESLint rules.
+                    </li>
+                    <li className="job__skill">
+                        Tested ESLint rules.
+                    </li>
+                    <li className="job__skill">
+                        Learned to work with a team.
+                    </li>
+                    <li className="job__skill">
+                        Gained experience in GitLab.
+                    </li>
+
+                </ul>
+            </div>
+
             <div className="job">
                 <h1 className="job__title">Front-end Pet-projects <span className="job__place">Self-employed</span></h1>
                 <p className="job__time-period">April 2024 - Current time; October 2023; December 2022 <span className="job__separator">|</span> Ukraine, Kyiv</p>
